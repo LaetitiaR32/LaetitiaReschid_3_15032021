@@ -5,6 +5,7 @@
     $font-family__title: Shrikhand;
     $font-family__txt: Roboto;
     $bg-color : lightgrey;
+    $pdg: 10px;
     
         body {
             font-size: 11pt;
@@ -32,7 +33,7 @@
             }
                 p {
                 text-align: center;
-                background-color: $secondary-color;
+                
             }
         }
           
@@ -46,12 +47,12 @@
             border: black;
             &__item {
                 list-style-type: none;
-                padding: 10px;
+                padding: $pdg
             }
         }
 
-        i.iMobile {
-            padding: 10px;
+        li i{ /* menu*/
+            padding: $pdg
         }
         
         /* img restaurant*/
@@ -67,6 +68,8 @@
         .background__grey figcaption {
             padding-top: 10px;
             padding-left: 10px; 
+            background-color: white;
+            padding-bottom: 10px;
              }    
         
         i.iconeHeart {

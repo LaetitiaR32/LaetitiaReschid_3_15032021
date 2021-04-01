@@ -1,0 +1,20 @@
+{
+  "name": "laetitiareschid_3_15032021",
+  "version": "1.0.0",
+  "description": "LaetitiaReschid_3_15032021",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "./dart-sass/sass ./sass/main.scss style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LaetitiaR32/LaetitiaReschid_3_15032021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LaetitiaR32/LaetitiaReschid_3_15032021/issues"
+  },
+  "homepage": "https://github.com/LaetitiaR32/LaetitiaReschid_3_15032021#readme"
+}

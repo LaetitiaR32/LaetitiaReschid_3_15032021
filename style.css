@@ -1,30 +1,27 @@
 @charset "UTF-8";
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 320px) {
   body {
     font-size: 11pt;
     font-family: Shrikhand;
     margin: 0;
   }
+
+  /*logo+localisation*/
   .center {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
-  #lieu--grey {
-    background-color: #D3D3D3;
+  .center #lieu--grey {
+    background-color: grey;
     width: 100%;
     height: 52px;
     text-align: center;
   }
+
+  /*réservation de menus*/
   .grey {
-    background-color: #DCDCDC;
+    background-color: lightgrey;
     height: 180px;
   }
   .grey h2 {
@@ -33,36 +30,49 @@
   .grey p {
     text-align: center;
   }
+
+  /* Partie Fonctionnement*/
   .titre {
     margin: 12px;
   }
-  /* Partie Fonctionnement*/
-  #menu {
+
+  .menu {
     border: black;
   }
-  li {
+  .menu__item {
     list-style-type: none;
+    padding: 10px;
   }
+
+  li i {
+    /* menu*/
+    padding: 10px;
+  }
+
   /* img restaurant*/
-  img {
-    border-radius: 15px 15px 0px 0px;
+  main {
+    background-color: lightgrey;
   }
-  .background--grey figure {
-    /* fond blanc img hébergements*/
+
+  .background__grey figure {
     margin: 30px;
-    -webkit-box-shadow: 3px 4px 7px 2px lightgray;
-            box-shadow: 3px 4px 7px 2px lightgray;
-    border-radius: 15px 15px 15px 15px;
+    box-shadow: 3px 4px 7px 2px lightgray;
+    /* a modifier*/
   }
-  .background--grey figcaption {
+
+  .background__grey figcaption {
     padding-top: 10px;
     padding-left: 10px;
+    background-color: white;
+    padding-bottom: 10px;
   }
+
   i.iconeHeart {
     position: relative;
     bottom: 32px;
     left: 86%;
   }
+
   /* pied de page*/
   footer {
     background-color: dimgray;
@@ -70,4 +80,5 @@
     padding: 18px;
   }
 }
+
 /*# sourceMappingURL=style.css.map */
