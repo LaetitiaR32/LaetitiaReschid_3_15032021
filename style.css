@@ -1,9 +1,9 @@
 /* Error: expected ";".
  *   ,
- * 4 |         body {
- *   |              ^
+ * 2 | @import "./utils/variables"
+ *   |                            ^
  *   '
- *   sass/main.scss 4:14  root stylesheet */
+ *   sass/main.scss 2:28  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -13,5 +13,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: 'Error: expected ";".\a   \2577 \a 4 \2502          body {\a   \2502               ^\a   \2575 \a   sass/main.scss 4:14  root stylesheet';
+  content: 'Error: expected ";".\a   \2577 \a 2 \2502  @import "./utils/variables"\a   \2502                             ^\a   \2575 \a   sass/main.scss 2:28  root stylesheet';
 }
