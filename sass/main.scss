@@ -1,11 +1,5 @@
 @media screen and (min-width:320px){
-    $primary-color: #9356DC;
-    $secondary-color:#FF79DA;
-    $tertiary-color: #99E2D0;
-    $font-family__title: Shrikhand;
-    $font-family__txt: Roboto;
-    $bg-color : lightgrey;
-    $pdg: 10px;
+@import "./utils/variables"
     
         body {
             font-size: 11pt;
