@@ -23,21 +23,3 @@
             
         }
     }
-      
-     /* Partie Fonctionnement*/
-
-    .titre {
-        margin : 12px;
-    }
-    
-    .menu {
-        border: black;
-        &__item {
-            list-style-type: none;
-            padding: $pdg
-        }
-    }
-
-    li i{ /* menu*/
-        padding: $pdg
-    }
