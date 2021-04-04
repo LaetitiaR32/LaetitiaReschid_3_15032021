@@ -1,8 +1,9 @@
 @media screen and (min-width:320px) {
 @import "../sass/utils/_variables.scss";
-@import "../sass/utils/_footer.scss";
-@import "../sass/utils/_header.scss";
-@import "../sass/utils/_navigation.scss";
+@import "../sass/layouts /_navigation.scss";
+@import "../sass/layouts /_header.scss";
+@import "../sass/layouts /_footer.scss";
+
 
 
         body {
