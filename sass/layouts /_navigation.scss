@@ -1,8 +1,11 @@
      .titre { /* Partie Fonctionnement*/
-        margin : 24px;
+        margin-left : 19px;
+        margin-bottom: 23px;
+        font-family: $font-family__title;
     }
+
     .menu {
-        width: 98%;
+        width: 100%;
         padding-left: 0;
     }
     .menu__item {   
@@ -10,14 +13,14 @@
             border-radius : 20px;
             padding-left: 15px;
             margin: 20px;
-            padding-top: 3px;
-            padding-bottom: 3px;
-            background-color: lightgrey;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background-color: $bgd-color;
             box-shadow: 3px 3px 3px 3px lightgrey;
   }
         
     li i{ /* menu*/
         padding: $pdg +10;
         font-size: 17px;
-        color: grey;
+        color: dimgrey;
     }

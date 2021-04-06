@@ -6,11 +6,13 @@
   /* LAYOUTS*/
   .titre {
     /* Partie Fonctionnement*/
-    margin: 24px;
+    margin-left: 19px;
+    margin-bottom: 23px;
+    font-family: Shrikhand, sans-serif;
   }
 
   .menu {
-    width: 98%;
+    width: 100%;
     padding-left: 0;
   }
 
@@ -19,9 +21,9 @@
     border-radius: 20px;
     padding-left: 15px;
     margin: 20px;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    background-color: lightgrey;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: whitesmoke;
     box-shadow: 3px 3px 3px 3px lightgrey;
   }
 
@@ -29,7 +31,11 @@
     /* menu*/
     padding: 20px;
     font-size: 17px;
-    color: grey;
+    color: dimgrey;
+  }
+
+  header {
+    align-items: center;
   }
 
   .center {
@@ -56,7 +62,7 @@
 
   /*réservation de menus*/
   .grey {
-    background-color: lightgrey;
+    background-color: whitesmoke;
     margin-bottom: 39px;
     padding-bottom: 4px;
   }
@@ -65,6 +71,7 @@
     width: 75%;
     margin-left: 40px;
     padding-top: 57px;
+    font-family: Shrikhand, sans-serif;
   }
   .grey p {
     text-align: center;
@@ -84,19 +91,30 @@
   footer {
     background-color: dimgray;
     color: white;
-    padding: 18px;
+    padding: 9px;
+  }
+  footer #footer {
+    margin-left: 15px;
+  }
+  footer h3 {
+    margin-bottom: 27px;
+    font-family: Shrikhand, sans-serif;
+  }
+  footer p {
+    line-height: 10px;
   }
 
   /* BASE*/
   body {
     font-size: 11pt;
-    font-family: Shrikhand, sans-serif;
+    font-family: Roboto, sans-serif;
     margin: 0;
+    overflow-x: hidden;
   }
 
   /* img restaurant*/
   main {
-    background-color: lightgrey;
+    background-color: whitesmoke;
     margin-top: 50px;
     padding-bottom: 1px;
   }
@@ -105,8 +123,8 @@
     padding-top: 10px;
   }
   .background__grey figure {
-    margin: 30px;
-    box-shadow: 3px 4px 7px 2px lightgray;
+    margin: 14px;
+    box-shadow: 3px 4px 7px 2px lightgrey;
     /* a modifier*/
     display: flex;
     flex-direction: column;
@@ -116,14 +134,17 @@
   }
 
   .background__grey figcaption {
-    padding-top: 5px;
+    padding-bottom: 24px;
     padding-left: 14px;
     background-color: white;
-    border-radius: 0px 0px 15px 15px;
+    border-radius: 0px 0px 18px 18px;
     line-height: 0px;
+    margin-top: -3px;
   }
   .background__grey figcaption h3 {
-    padding-bottom: 10px;
+    font-size: 15px;
+    line-height: 1em;
+    font-family: Shrikhand, sans-serif;
   }
 
   i.iconeHeart {
