@@ -6,20 +6,30 @@
   /* LAYOUTS*/
   .titre {
     /* Partie Fonctionnement*/
-    margin: 12px;
+    margin: 24px;
   }
 
   .menu {
-    border: black;
+    width: 98%;
+    padding-left: 0;
   }
+
   .menu__item {
     list-style-type: none;
-    padding: 10px;
+    border-radius: 20px;
+    padding-left: 15px;
+    margin: 20px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background-color: lightgrey;
+    box-shadow: 3px 3px 3px 3px lightgrey;
   }
 
   li i {
     /* menu*/
-    padding: 10px;
+    padding: 20px;
+    font-size: 17px;
+    color: grey;
   }
 
   .center {
@@ -27,24 +37,47 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 65px;
+  }
+  .center img {
+    margin-top: 20px;
   }
   .center #lieu--grey {
-    background-color: grey;
+    background-color: lightgrey;
     width: 100%;
-    height: 52px;
+    padding-bottom: 15px;
+    padding-top: 15px;
     text-align: center;
+    border: inset;
+  }
+  .center #lieu--grey i.iMarker {
+    padding-right: 10px;
   }
 
   /*réservation de menus*/
   .grey {
     background-color: lightgrey;
-    height: 180px;
+    margin-bottom: 39px;
+    padding-bottom: 4px;
   }
   .grey h2 {
     text-align: center;
+    width: 75%;
+    margin-left: 40px;
+    padding-top: 57px;
   }
   .grey p {
     text-align: center;
+    margin-bottom: 30px;
+  }
+  .grey p + p {
+    border-radius: 27px;
+    width: 63%;
+    margin-left: 64px;
+    background-color: #FF79DA;
+    height: 31px;
+    padding-top: 14px;
+    color: white;
   }
 
   /* pied de page*/
@@ -57,25 +90,39 @@
   /* BASE*/
   body {
     font-size: 11pt;
-    font-family: Shrikhand;
+    font-family: Shrikhand, sans-serif;
     margin: 0;
   }
 
   /* img restaurant*/
   main {
     background-color: lightgrey;
+    margin-top: 50px;
+    padding-bottom: 1px;
   }
 
+  .background__grey {
+    padding-top: 10px;
+  }
   .background__grey figure {
     margin: 30px;
     box-shadow: 3px 4px 7px 2px lightgray;
     /* a modifier*/
+    display: flex;
+    flex-direction: column;
+  }
+  .background__grey img {
+    border-radius: 15px 15px 0px 0px;
   }
 
   .background__grey figcaption {
-    padding-top: 10px;
-    padding-left: 10px;
+    padding-top: 5px;
+    padding-left: 14px;
     background-color: white;
+    border-radius: 0px 0px 15px 15px;
+    line-height: 0px;
+  }
+  .background__grey figcaption h3 {
     padding-bottom: 10px;
   }
 
@@ -83,6 +130,7 @@
     position: relative;
     bottom: 32px;
     left: 86%;
+    font-size: 22px;
   }
 }
 

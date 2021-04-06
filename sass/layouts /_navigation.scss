@@ -1,15 +1,23 @@
      .titre { /* Partie Fonctionnement*/
-        margin : 12px;
+        margin : 24px;
     }
-    
     .menu {
-        border: black;
-        &__item {
-            list-style-type: none;
-            padding: $pdg
-        }
+        width: 98%;
+        padding-left: 0;
     }
-
+    .menu__item {   
+            list-style-type: none;
+            border-radius : 20px;
+            padding-left: 15px;
+            margin: 20px;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            background-color: lightgrey;
+            box-shadow: 3px 3px 3px 3px lightgrey;
+  }
+        
     li i{ /* menu*/
-        padding: $pdg
+        padding: $pdg +10;
+        font-size: 17px;
+        color: grey;
     }
