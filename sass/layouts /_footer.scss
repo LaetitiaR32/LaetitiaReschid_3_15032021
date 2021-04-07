@@ -1,14 +1,15 @@
         /* pied de page*/
         footer {
-            background-color: dimgray;
+            background-color: rgb(49, 48, 48);
             color: white;
             padding: 9px;
             #footer {
                 margin-left: 15px;
+                margin-bottom: 26px;
             }   
-            h3 {
-                margin-bottom: 27px;
-                font-family: $font-family__title;
+            img {
+                margin-top: 17px;
+               
             }
             p {
                 line-height: 10px;

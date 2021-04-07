@@ -1,6 +1,6 @@
      .titre { /* Partie Fonctionnement*/
         margin-left : 19px;
-        margin-bottom: 23px;
+        margin-bottom: 37px;
         font-family: $font-family__title;
     }
 
@@ -13,10 +13,16 @@
             border-radius : 20px;
             padding-left: 15px;
             margin: 20px;
-            padding-top: 10px;
-            padding-bottom: 10px;
+            padding-top: 8px;
+            padding-bottom: 8px;
             background-color: $bgd-color;
-            box-shadow: 3px 3px 3px 3px lightgrey;
+            box-shadow: 8px 8px 12px lightgrey;
+            &:hover {
+                background-color:#E6E6FA;
+                li i {
+                    color: #9370D8;
+                }
+            }         
   }
         
     li i{ /* menu*/
