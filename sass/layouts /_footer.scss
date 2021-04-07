@@ -3,15 +3,12 @@
             background-color: rgb(49, 48, 48);
             color: white;
             padding: 9px;
-            #footer {
-                margin-left: 15px;
-                margin-bottom: 26px;
-            }   
-            img {
-                margin-top: 17px;
-               
-            }
-            p {
-                line-height: 10px;
-            }
-        } 
+                h3 {
+                    font-family: $font-family__title;
+                    margin-left: 12px;
+                }
+                     p {
+                    line-height: 10px;
+                    margin-left: 12px;
+                     }
+            } 
