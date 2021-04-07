@@ -7,7 +7,6 @@
   /* Partie Fonctionnement*/
   margin-left: 19px;
   margin-bottom: 37px;
-  font-family: Shrikhand, sans-serif;
 }
 
 .menu {
@@ -28,7 +27,7 @@
 .menu__item:hover {
   background-color: #E6E6FA;
 }
-.menu__item:hover li i {
+.menu__item i.iStore {
   color: #9370D8;
 }
 
@@ -69,14 +68,13 @@ header {
 .grey {
   background-color: whitesmoke;
   margin-bottom: 39px;
-  padding-bottom: 4px;
+  padding-bottom: 46px;
 }
 .grey h2 {
   text-align: center;
   width: 75%;
   margin-left: 40px;
   padding-top: 57px;
-  font-family: Shrikhand, sans-serif;
 }
 .grey p {
   text-align: center;
@@ -85,14 +83,16 @@ header {
 }
 .grey button {
   border-radius: 27px;
-  width: 63%;
-  margin-left: 64px;
+  width: 65%;
+  margin-left: 58px;
   background-color: #FF79DA;
-  padding-bottom: 14px;
-  height: 31px;
-  padding-top: 14px;
+  padding-bottom: 19px;
+  padding-top: 19px;
   color: white;
-  filter: drop-shadow(5px 6px 4px gainsboro);
+  filter: drop-shadow(5px 6px 4px silver);
+  border: none;
+  font-weight: bold;
+  background-image: linear-gradient(-5deg, #FF79DA, #9370D8);
 }
 
 /* pied de page*/
@@ -152,7 +152,6 @@ main {
 .background__grey figcaption h3 {
   font-size: 15px;
   line-height: 1em;
-  font-family: Shrikhand, sans-serif;
 }
 
 i.iconeHeart {

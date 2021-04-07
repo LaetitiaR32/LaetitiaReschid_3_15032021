@@ -1,7 +1,6 @@
      .titre { /* Partie Fonctionnement*/
         margin-left : 19px;
         margin-bottom: 37px;
-        font-family: $font-family__title;
     }
 
     .menu {
@@ -19,11 +18,11 @@
             box-shadow: 8px 8px 12px lightgrey;
             &:hover {
                 background-color:#E6E6FA;
-                li i {
+            }  
+            i.iStore{
                     color: #9370D8;
-                }
-            }         
-  }
+                }       
+            }
         
     li i{ /* menu*/
         padding: $pdg +10;
