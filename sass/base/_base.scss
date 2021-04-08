@@ -16,10 +16,10 @@
 
         .background__grey {
             padding-top : 10px;
+            margin-bottom: 37px;
             figure {
-                margin-left: 14px;
-                margin-right: 14px;
-                margin-top: -17px;
+                margin-left: 6%;
+                margin-right: 6%;
                 display: flex;
                 flex-direction: column;
             }
@@ -31,13 +31,14 @@
             
     
         .background__grey figcaption {
-            padding-bottom: 24px; 
             padding-left: 14px; 
             background-color: white;
             border-radius: 0px 0px 18px 18px;
             line-height: 0px;
             margin-top: -3px;
             box-shadow: 1px 1px 12px lightgrey;
+            display: flex;
+            flex-direction: column;
                 h3 {
                     font-size: 15px;
                     line-height: 1em;
@@ -45,10 +46,5 @@
 
              }    
              
-             i.iconeHeart {
-                position: relative;
-                bottom: 32px;
-                left: 86%;
-                font-size: 22px;
-                }  
+        
          
