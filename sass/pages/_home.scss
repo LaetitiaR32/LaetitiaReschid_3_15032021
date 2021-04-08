@@ -6,6 +6,13 @@ i.iconeHeart {
     left: 86%;
     font-size: 22px;
     }  
+i.iconeHeart1 {
+    position: relative;
+    bottom: 32px;
+    left: 86%;
+    font-size: 22px;
+    color : $secondary-color;
+}
 
 /* mise en forme localisation*/ 
 
@@ -24,13 +31,10 @@ i.iconeHeart {
         padding-top: 15px;
         text-align: center;
         border: inset;
+          }
             i.iMarker{
                 padding-right: $pdg;
             }
     }   
 
 /* création icone "nouveau" sur les images des restaurants*/
-
-
-
-

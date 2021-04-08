@@ -1,18 +1,191 @@
-/* Error: unmatched "}".
- *   ,
- * 4 |     }
- *   |     ^
- *   '
- *   sass/layouts /_header.scss 4:5  @import
- *   sass/main.scss 8:9              root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: unmatched "}".\a   \2577 \a 4 \2502      }\a   \2502      ^\a   \2575 \a   sass/layouts /_header.scss 4:5  @import\a   sass/main.scss 8:9              root stylesheet';
+@charset "UTF-8";
+/* VARIABLES*/
+/*TYPOGRAPHIE*/
+/*TYPOGRAPHIE*/
+/* LAYOUTS*/
+.titre {
+  /* Partie Fonctionnement*/
+  margin-left: 23px;
+  margin-bottom: 16px;
 }
+
+.menu {
+  width: 100%;
+  padding: 0;
+}
+
+.menu__item {
+  list-style-type: none;
+  border-radius: 19px;
+  margin: 19px;
+  background-color: whitesmoke;
+  box-shadow: 8px 8px 12px lightgrey;
+  display: flex;
+  align-items: center;
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+.menu__item:hover {
+  background-color: #E6E6FA;
+}
+.menu__item p {
+  color: white;
+  border-radius: 59%;
+  background-color: #9370D8;
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-top: 3px;
+  padding-bottom: 4px;
+  font-size: 14px;
+  margin-left: -5px;
+}
+.menu__item i.iStore {
+  color: #9370D8;
+}
+
+li i {
+  /* menu*/
+  padding: 20px;
+  font-size: 17px;
+  color: dimgrey;
+}
+
+header {
+  align-items: center;
+}
+
+/*réservation de menus*/
+.grey {
+  background-color: whitesmoke;
+  margin-bottom: 39px;
+  padding-bottom: 46px;
+}
+.grey h2 {
+  text-align: center;
+  width: 75%;
+  margin-left: 40px;
+  padding-top: 57px;
+}
+.grey p {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 100;
+}
+.grey button {
+  border-radius: 27px;
+  width: 65%;
+  margin-left: 58px;
+  background-color: #FF79DA;
+  padding-bottom: 19px;
+  padding-top: 19px;
+  color: white;
+  filter: drop-shadow(5px 6px 4px silver);
+  border: none;
+  font-weight: bold;
+  background-image: linear-gradient(-5deg, #9370D8, #FF79DA);
+}
+
+/* pied de page*/
+footer {
+  background-color: #313030;
+  color: white;
+  padding: 9px;
+}
+footer h3 {
+  font-family: Shrikhand, sans-serif;
+  margin-left: 12px;
+}
+footer p {
+  line-height: 10px;
+  margin-left: 12px;
+}
+
+/* BASE*/
+body {
+  font-size: 11pt;
+  font-family: Roboto, sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* img restaurant*/
+main {
+  background-color: whitesmoke;
+  margin-top: 50px;
+  padding-bottom: 1px;
+}
+
+.background__grey {
+  padding-top: 10px;
+  margin-bottom: 37px;
+}
+.background__grey figure {
+  margin-left: 6%;
+  margin-right: 6%;
+  display: flex;
+  flex-direction: column;
+}
+.background__grey img {
+  border-radius: 15px 15px 0px 0px;
+  object-fit: cover;
+}
+
+.background__grey figcaption {
+  padding-left: 14px;
+  background-color: white;
+  border-radius: 0px 0px 18px 18px;
+  line-height: 0px;
+  margin-top: -3px;
+  box-shadow: 1px 1px 12px lightgrey;
+  display: flex;
+  flex-direction: column;
+}
+.background__grey figcaption h3 {
+  font-size: 15px;
+  line-height: 1em;
+}
+
+/* PAGES*/
+/* animation sur un coeur : couleur violet + icone main qui clique*/
+i.iconeHeart {
+  position: relative;
+  bottom: 32px;
+  left: 86%;
+  font-size: 22px;
+}
+
+i.iconeHeart1 {
+  position: relative;
+  bottom: 32px;
+  left: 86%;
+  font-size: 22px;
+  color: #FF79DA;
+}
+
+/* mise en forme localisation*/
+.center {
+  /*logo+localisation*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 65px;
+}
+.center img {
+  margin-top: 20px;
+}
+.center #lieu--grey {
+  background-color: #eee;
+  width: 100%;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  text-align: center;
+  border: inset;
+}
+.center i.iMarker {
+  padding-right: 10px;
+}
+
+/* création icone "nouveau" sur les images des restaurants*/
+/* tout le code qui est spécifique à la page d'accueil*/
+
+/*# sourceMappingURL=style.css.map */
