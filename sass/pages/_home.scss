@@ -45,9 +45,16 @@ i.iconeHeart1 {
 /* création icone "nouveau" sur les images des restaurants*/
 
 figure p{
-    color: #3CB371;
-    background-color: #2E8B57;
+    
     position: absolute;
-    right: 12px;
-    top: 12px;
+    right: 18px;
+    top: -3px;
+    color: seagreen;
+    background-color: MediumAquaMarine;
+    width: 26%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    border-radius: 7%;
+    font-family:$font-family__txt;
 }
