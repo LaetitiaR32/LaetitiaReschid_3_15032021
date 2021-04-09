@@ -11,7 +11,12 @@ i.iconeHeart1 {
     bottom: 32px;
     left: 86%;
     font-size: 22px;
-    color : $secondary-color;
+    background-image: linear-gradient( 0deg , #FF79DA, #9370D8);
+            background-size: cover;
+            background-position: center;
+            background-clip: text;
+          -webkit-background-clip:text;
+            color: transparent;
 }
 
 /* mise en forme localisation*/ 
@@ -38,3 +43,11 @@ i.iconeHeart1 {
     }   
 
 /* création icone "nouveau" sur les images des restaurants*/
+
+figure p{
+    color: #3CB371;
+    background-color: #2E8B57;
+    position: absolute;
+    right: 12px;
+    top: 12px;
+}
