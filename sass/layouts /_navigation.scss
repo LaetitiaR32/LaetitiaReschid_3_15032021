@@ -42,3 +42,37 @@
         font-size: 17px;
         color: dimgrey;
     }
+
+          /*La palette du goût*/
+          .menu1 {
+            width: 100%;
+            padding: 0;
+        }
+        .menu1__item {   
+            list-style-type: none;
+            border-radius: 14px;
+            margin-right: 16px;
+            margin-left: -3px;
+            margin-bottom: 18px;
+            background-color: white;
+            box-shadow: 8px 8px 12px lightgrey;
+            padding-left: 10px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            line-height: 6px;
+            position: relative;
+                   h3 {
+                    font-size: 16px;
+                   } 
+                   p {
+                    font-weight: 300;
+                   }
+                   .prix {
+                    font-weight: bold;
+                    position: absolute;
+                    top: 27px;
+                    right: 13px;
+                }
+            }
+            
+   

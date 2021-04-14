@@ -50,6 +50,39 @@ li i {
   color: dimgrey;
 }
 
+/*La palette du goût*/
+.menu1 {
+  width: 100%;
+  padding: 0;
+}
+
+.menu1__item {
+  list-style-type: none;
+  border-radius: 14px;
+  margin-right: 16px;
+  margin-left: -3px;
+  margin-bottom: 18px;
+  background-color: white;
+  box-shadow: 8px 8px 12px lightgrey;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  line-height: 6px;
+  position: relative;
+}
+.menu1__item h3 {
+  font-size: 16px;
+}
+.menu1__item p {
+  font-weight: 300;
+}
+.menu1__item .prix {
+  font-weight: bold;
+  position: absolute;
+  top: 27px;
+  right: 13px;
+}
+
 header {
   align-items: center;
 }
@@ -86,6 +119,7 @@ header {
   background-image: linear-gradient(-5deg, #9370D8, #FF79DA);
 }
 
+/*La palette du goût*/
 /* pied de page*/
 footer {
   background-color: #313030;
@@ -109,6 +143,52 @@ body {
   overflow-x: hidden;
 }
 
+/*  #container {
+
+margin: auto;
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+         bottom: 0;
+         animation-delay: 2.9s;
+         animation: loader 0.1s;
+      }
+      @keyframes loader {
+
+      } */
+.chargement {
+  /*création du loader*/
+  border: 10px solid #f3f3f3;
+  border-top: 10px solid #9356DC;
+  border-bottom: 10px solid #FF79DA;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  -webkit-animation: spin 3s linear infinite;
+  -o-animation: spin 3s linear infinite;
+  animation: spin 3s linear infinite;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+/*Animation du loader*/
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+/*  disparition du loader*/
 /* img restaurant*/
 main {
   background-color: whitesmoke;
@@ -147,6 +227,58 @@ main {
   line-height: 1em;
 }
 
+/*La palette du goût*/
+.fond {
+  border-radius: 41px 41px 0px 0px;
+  position: relative;
+  top: -35px;
+  margin-top: 0;
+}
+
+.liste {
+  margin-left: 12px;
+  margin-bottom: 44px;
+}
+
+.titre1 {
+  font-family: Shrikhand, sans-serif;
+  font-size: 23px;
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.titre2 {
+  font-size: 15px;
+  font-weight: lighter;
+  margin-left: 7px;
+  text-decoration: 3px underline #99E2D0;
+}
+
+/* le bouton commander*/
+button {
+  border-radius: 27px;
+  width: 60%;
+  margin-left: 50px;
+  margin-top: 19px;
+  background-color: #FF79DA;
+  padding-bottom: 16px;
+  padding-top: 16px;
+  color: white;
+  filter: drop-shadow(5px 6px 4px silver);
+  border: none;
+  font-weight: lighter;
+  font-size: 15px;
+  background-image: linear-gradient(-5deg, #9370D8, #FF79DA);
+  transition: 0.3s;
+}
+button:hover {
+  /* éclaircir le bouton au survol */
+  opacity: 0.5;
+  filter: drop-shadow(7px 8px 6px grey);
+}
+
 /* PAGES*/
 /* animation sur un coeur : couleur violet + icone main qui clique*/
 i.iconeHeart {
@@ -155,18 +287,25 @@ i.iconeHeart {
   left: 86%;
   font-size: 22px;
 }
-
-i.iconeHeart1 {
-  position: relative;
-  bottom: 32px;
-  left: 86%;
-  font-size: 22px;
+i.iconeHeart:hover {
   background-image: linear-gradient(0deg, #FF79DA, #9370D8);
+  /* couleur a la taille du coeur*/
   background-size: cover;
   background-position: center;
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+  font-weight: bold;
+  transition: background-image 3s ease-out;
+  transition: color 2s ease-out;
+  /*mise en place de la transition : arriver progressive de la couleur */
+}
+i.iconeHeart i.iconeHeart::before {
+  transition: color 1s ease-out;
+}
+i.iconeHeart i.iconeHeart:hover::before {
+  background-image: linear-gradient(0deg, #FF79DA, #9370D8);
+  cursor: pointer;
 }
 
 /* mise en forme localisation*/
@@ -206,6 +345,27 @@ figure p {
   text-align: center;
   border-radius: 7%;
   font-family: Roboto;
+}
+
+/*La palette du goût*/
+.center1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 1px;
+  height: 51px;
+}
+.center1 i.iArrow {
+  padding-left: 12px;
+  width: 48%;
+}
+.center1 .logo {
+  padding-right: 93px;
+  width: 42%;
+}
+
+i.iconeHeart2 {
+  padding-left: 28px;
 }
 
 /* tout le code qui est spécifique à la page d'accueil*/
