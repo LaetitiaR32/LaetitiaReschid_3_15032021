@@ -51,28 +51,53 @@
         .menu1__item {   
             list-style-type: none;
             border-radius: 14px;
-            margin-right: 16px;
-            margin-left: -3px;
+            margin-right: 3%;
+            margin-left: 3%;
             margin-bottom: 18px;
             background-color: white;
             box-shadow: 8px 8px 12px lightgrey;
-            padding-left: 10px;
-            padding-top: 5px;
-            padding-bottom: 5px;
-            line-height: 6px;
+            padding-top: 0.5px;
+            padding-bottom: 0.5px;
+            line-height: 4px;
             position: relative;
-                   h3 {
-                    font-size: 16px;
+            width: 94%;
+            animation-duration: 2s; /* vitesse de l'amination*/
+            animation-name: slidein;/*nom de l'amination*/
+            animation-iteration-count: 1; 
+          } 
+ 
+      @keyframes slidein { /* selection de l'animation*/
+        from {
+          margin-bottom:100%;
+          width:94%
+        }
+      
+        to {
+          margin-bottom: 5%;
+          width:94%;
+        }
+      }
+
+                   .titre3 {
+                    font-size: 15px;
+                    padding-left: $pdg;
                    } 
-                   p {
+                   .sous-titre {
                     font-weight: 300;
+                    padding: 5px 0px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    padding-left: $pdg;
+                    font-size:13.5px;
                    }
                    .prix {
                     font-weight: bold;
                     position: absolute;
-                    top: 27px;
-                    right: 13px;
+                    top: 22px;
+                    left: 256PX;
+                    font-size:13.5px;
+
                 }
-            }
+         
             
    

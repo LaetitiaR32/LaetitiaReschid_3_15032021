@@ -59,28 +59,54 @@ li i {
 .menu1__item {
   list-style-type: none;
   border-radius: 14px;
-  margin-right: 16px;
-  margin-left: -3px;
+  margin-right: 3%;
+  margin-left: 3%;
   margin-bottom: 18px;
   background-color: white;
   box-shadow: 8px 8px 12px lightgrey;
-  padding-left: 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  line-height: 6px;
+  padding-top: 0.5px;
+  padding-bottom: 0.5px;
+  line-height: 4px;
   position: relative;
+  width: 94%;
+  animation-duration: 2s;
+  /* vitesse de l'amination*/
+  animation-name: slidein;
+  /*nom de l'amination*/
+  animation-iteration-count: 1;
 }
-.menu1__item h3 {
-  font-size: 16px;
+
+@keyframes slidein {
+  /* selection de l'animation*/
+  from {
+    margin-bottom: 100%;
+    width: 94%;
+  }
+  to {
+    margin-bottom: 5%;
+    width: 94%;
+  }
 }
-.menu1__item p {
+.titre3 {
+  font-size: 15px;
+  padding-left: 10px;
+}
+
+.sous-titre {
   font-weight: 300;
+  padding: 5px 0px;
+  white-space: nowrap;
+  overflow: hidden;
+  padding-left: 10px;
+  font-size: 13.5px;
 }
-.menu1__item .prix {
+
+.prix {
   font-weight: bold;
   position: absolute;
-  top: 27px;
-  right: 13px;
+  top: 22px;
+  left: 256PX;
+  font-size: 13.5px;
 }
 
 header {
@@ -141,6 +167,7 @@ body {
   font-family: Roboto, sans-serif;
   margin: 0;
   overflow-x: hidden;
+  background-color: whitesmoke;
 }
 
 /*  #container {
@@ -236,7 +263,6 @@ main {
 }
 
 .liste {
-  margin-left: 12px;
   margin-bottom: 44px;
 }
 
@@ -247,13 +273,16 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 23px;
 }
 
 .titre2 {
   font-size: 15px;
   font-weight: lighter;
-  margin-left: 7px;
-  text-decoration: 3px underline #99E2D0;
+  margin-left: 18px;
+  border-bottom: 3px solid #99E2D0;
+  padding-bottom: 5px;
+  width: 11%;
 }
 
 /* le bouton commander*/
@@ -317,6 +346,7 @@ i.iconeHeart i.iconeHeart:hover::before {
   height: 51px;
   border-bottom: 3px solid lightgrey;
   box-shadow: 0 2px 5px 1px rgba(64, 60, 67, 0.16);
+  background-color: white;
 }
 .center img {
   margin-top: 20px;
@@ -354,6 +384,7 @@ figure p {
   justify-content: center;
   padding-bottom: 1px;
   height: 51px;
+  background-color: white;
 }
 .center1 i.iArrow {
   padding-left: 12px;
@@ -366,6 +397,29 @@ figure p {
 
 i.iconeHeart2 {
   padding-left: 28px;
+}
+
+/* texte réduit quand la phrase est trop longue class="overflow-ellipsis" */
+.overflow-ellipsis {
+  /* sous titre Filet de boeuf*/
+  text-overflow: ellipsis;
+  width: 243px;
+  padding: 5px 0px;
+  white-space: nowrap;
+  overflow: hidden;
+  padding-left: 10px;
+  font-size: 13.5px;
+}
+
+.overflow-ellipsis1 {
+  /* sous titre Oeuf au plat*/
+  text-overflow: ellipsis;
+  width: 201px;
+  padding: 5px 0px;
+  white-space: nowrap;
+  overflow: hidden;
+  padding-left: 10px;
+  font-size: 13.5px;
 }
 
 /* tout le code qui est spécifique à la page d'accueil*/

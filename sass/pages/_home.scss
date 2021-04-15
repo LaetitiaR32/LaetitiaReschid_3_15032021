@@ -40,6 +40,7 @@ i.iconeHeart {
     height: 51px;
     border-bottom: 3px solid lightgrey;
     box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
+    background-color: white;
         img { 
             margin-top: 20px;
         }
@@ -79,6 +80,7 @@ figure p{
     justify-content: center;
     padding-bottom: 1px;
     height: 51px;
+    background-color: white;
             i.iArrow {
                 padding-left:12px ;
                 width: 48%;
@@ -91,4 +93,28 @@ figure p{
 
     i.iconeHeart2 {
         padding-left: 28px;
+    }
+
+    /* texte réduit quand la phrase est trop longue class="overflow-ellipsis" */
+
+    .overflow-ellipsis { /* sous titre Filet de boeuf*/
+        text-overflow: ellipsis;
+        width: 243px;
+        padding: 5px 0px;
+        white-space: nowrap;
+        overflow: hidden;
+        padding-left: 10px;
+        font-size: 13.5px;
+
+    }
+
+    .overflow-ellipsis1 { /* sous titre Oeuf au plat*/
+        text-overflow: ellipsis;
+        width: 201px;
+        padding: 5px 0px;
+        white-space: nowrap;
+        overflow: hidden;
+        padding-left: 10px;
+        font-size: 13.5px;
+
     }
