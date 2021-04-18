@@ -1,0 +1,39 @@
+/*réservation de menus*/
+button { 
+    border-radius : 27px;
+    width : 65%; 
+    margin-left: 58px;
+    background-color: $secondary-color;
+    padding-bottom: 19px;
+    padding-top: 19px;
+    color: white;
+    filter: drop-shadow(5px 6px 4px silver);
+    border:none;
+    font-weight: bold;
+    background-image: $btn-color;
+
+}
+
+  /* le bouton commander ==> pour les pages menus*/
+.btn {
+    border-radius : 27px;
+    width : 60%; 
+    margin-left: 50px;
+    margin-top: 19px;
+    background-color: $secondary-color;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    color: white;
+    filter: drop-shadow(5px 6px 4px silver);
+    border:none;
+    font-weight: lighter;
+    font-size: 15px;
+    background-image: $btn-color;
+    transition: 0.3s;
+       &:hover { /* éclaircir le bouton au survol */
+            opacity: 0.5;
+            filter: drop-shadow(7px 8px 6px grey);
+        
+        }
+
+}
