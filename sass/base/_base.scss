@@ -1,60 +1,15 @@
-
         body {
             font-size: 11pt;
             font-family: $font-family__txt,sans-serif;
             margin: 0;  
-            overflow-x: hidden;  
-            background-color: whitesmoke;
-         }
-       /*  #container {
-                 
-   margin: auto;
-   position: absolute;
-   top: 0;
-   left: 0;
-   right: 0;
-            bottom: 0;
-            animation-delay: 2.9s;
-            animation: loader 0.1s;
-         }
-         @keyframes loader {
-            
-         } */
-
-            .chargement {
-                /*création du loader*/
-                border: 10px solid #f3f3f3;
-                border-top:10px solid $primary-color; 
-                border-bottom: 10px solid $secondary-color;
-                border-radius: 50%;
-                width: 100px;
-                height: 100px;
-                -webkit-animation: spin 3s linear infinite;
-                -o-animation: spin 3s linear infinite;
-                animation: spin 3s linear infinite;
-                margin: auto;
-                position: absolute;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                z-index: 1;
-        }
-
-        /*Animation du loader*/
-        @keyframes spin {
-            0% {
-                transform: rotate(0deg);
+            overflow-x: hidden;
+            /* transition*/
+            animation-duration: 3s;
             }
-            100% {
-                transform: rotate(360deg);
-                visibility: hidden;
-                opacity: 0;
-            }  }
-/*  disparition du loader*/
-    
-      
-        
+            #section {
+                background-color: #16a085;
+                height: 500px;
+                  }
         
         /* img restaurant*/
     
@@ -128,5 +83,12 @@
         width: 11%;
     }
 
-  
-         
+  /* La palette du gout*/
+  .body1 {
+    font-size: 11pt;
+    font-family: $font-family__txt,sans-serif;
+    margin: 0;  
+    overflow-x: hidden;
+    background-color: whitesmoke;
+
+    }    

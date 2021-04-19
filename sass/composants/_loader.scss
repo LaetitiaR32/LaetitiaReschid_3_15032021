@@ -1,0 +1,35 @@
+
+           
+           .chargement {
+                /*création du loader*/
+                border: 10px solid #f3f3f3;
+                border-top:10px solid $primary-color; 
+                border-bottom: 10px solid $secondary-color;
+                border-radius: 50%;
+                width: 100%;
+                height: 100%;
+                background-color: #000;  
+                -webkit-animation: spin 3s linear infinite; /* s'adapte à tous les navigateurs*/
+                -o-animation: spin 3s linear infinite;
+                animation: spin 3s linear infinite;
+                position: absolute; 
+                display: flex;
+                justify-content: center;
+                align-items: center;
+        }
+
+        /*Animation du loader*/
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+                visibility: hidden;
+                opacity: 0;
+             
+            }  }
+/*  disparition du loader*/
+
+
+/* accueil ==> pour mettre un fond derriere la page avant apparition*/

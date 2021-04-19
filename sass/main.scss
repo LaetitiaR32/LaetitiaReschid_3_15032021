@@ -1,17 +1,29 @@
-/* VARIABLES*/
+/* UTILS*/
 
+@import "../sass/utils/_mixins.scss"; 
 @import "../sass/utils/_variables.scss";
+
+
+//*COMPOSANTS*/
+
+@import"../sass/composants/_button.scss"; /* contient tous les boutons du site*/
+@import"../sass/composants/_loader.scss";
+
 
 /* LAYOUTS*/
 
-@import "../sass/layouts /_navigation.scss";
 @import "../sass/layouts /_header.scss";
+@import "../sass/layouts /_navigation.scss";
 @import "../sass/layouts /_footer.scss";
 
-/* BASE*/
+/* BASE*/       
 
-@import "../sass/base/_base.scss";
+@import "../sass/base/_base.scss"; /*contient le code standard*/  
 
 /* PAGES*/
 
 @import "../sass/pages/_home.scss"; /* tout le code qui est spécifique à la page d'accueil*/
+
+
+/* Utilisez les breakpoints avec Sass*/
+

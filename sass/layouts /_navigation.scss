@@ -16,10 +16,7 @@
             display:flex;
             align-items: center;
             padding-top: 9px;
-            padding-bottom: 9px;
-            &:hover {
-                background-color:#E6E6FA;
-            }  
+            padding-bottom: 9px; 
             p {
                 color: white;
                 border-radius: 59%;
@@ -54,7 +51,7 @@
             margin-right: 3%;
             margin-left: 3%;
             margin-bottom: 18px;
-            background-color: white;
+            background-color: blue;
             box-shadow: 8px 8px 12px lightgrey;
             padding-top: 0.5px;
             padding-bottom: 0.5px;
@@ -64,6 +61,14 @@
             animation-duration: 2s; /* vitesse de l'amination*/
             animation-name: slidein;/*nom de l'amination*/
             animation-iteration-count: 1; 
+            &:hover { 
+              background-color:green;
+              width: 54%;
+              border-radius: 0px 0px 14px 14px;
+              margin-right: 3%;
+              margin-left: 3%;
+              margin-bottom: 18px;
+              } 
           } 
  
       @keyframes slidein { /* selection de l'animation*/
@@ -77,6 +82,8 @@
           width:94%;
         }
       }
+
+      /* Animation coche au survol*/
 
                    .titre3 {
                     font-size: 15px;
