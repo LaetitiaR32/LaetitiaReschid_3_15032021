@@ -180,7 +180,7 @@ li i {
   animation-iteration-count: 1;
 }
 .menu1__item:hover {
-  background-color: green;
+  background-color: blue;
   width: 54%;
   border-radius: 0px 0px 14px 14px;
   margin-right: 3%;
