@@ -1,17 +1,8 @@
-<<<<<<< Updated upstream
         body {
-=======
-html {  /* fond derriere le loader spinner */
-    background-color: #333;
-  }
-       
-       body {
->>>>>>> Stashed changes
             font-size: 11pt;
             font-family: $font-family__txt,sans-serif;
             margin: 0;  
             overflow-x: hidden;
-<<<<<<< Updated upstream
             /* transition*/
             animation-duration: 3s;
             }
@@ -19,30 +10,7 @@ html {  /* fond derriere le loader spinner */
                 background-color: #16a085;
                 height: 500px;
                   }
-=======
-            background-color: #333;
-            }
-            @keyframes FadeIn {
-                from {
-                  background-color: #d2f9f3;
-                }
-                
-                to {
-                  background-color: white;
-                }
-              }
-              
-              .FoodConsumptionTable tr {
-                  background-color: white;
-                  animation: FadeIn 0.75s ease-in-out forwards;
-              }
         
->>>>>>> Stashed changes
-        
-
-
-
-
         /* img restaurant*/
     
         main { 

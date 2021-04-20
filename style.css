@@ -1,8 +1,115 @@
 @charset "UTF-8";
-/* VARIABLES*/
+/* UTILS*/
 /*TYPOGRAPHIE*/
 /*TYPOGRAPHIE*/
+/* $font-size: 7rem 5rem 4rem 2rem; = liste d'une suite de valeur*+
+/* $font-size: (logo:7rem, heading:5rem, project-heading:4rem, label:2rem); = mapscar plus détaillé*/
+/* MAPS: pour utiliser il faut map-get(nom de la clé ex: $font-size , nom de la clé : label)*/
+/*réservation de menus*/
+button {
+  border-radius: 27px;
+  width: 65%;
+  margin-left: 58px;
+  background-color: #FF79DA;
+  padding-bottom: 19px;
+  padding-top: 19px;
+  color: white;
+  filter: drop-shadow(5px 6px 4px silver);
+  border: none;
+  font-weight: bold;
+  background-image: linear-gradient(-5deg, #9370D8, #FF79DA);
+}
+
+/* le bouton commander ==> pour les pages menus*/
+.btn {
+  border-radius: 27px;
+  width: 60%;
+  margin-left: 50px;
+  margin-top: 19px;
+  background-color: #FF79DA;
+  padding-bottom: 16px;
+  padding-top: 16px;
+  color: white;
+  filter: drop-shadow(5px 6px 4px silver);
+  border: none;
+  font-weight: lighter;
+  font-size: 15px;
+  background-image: linear-gradient(-5deg, #9370D8, #FF79DA);
+  transition: 0.3s;
+}
+.btn:hover {
+  /* éclaircir le bouton au survol */
+  opacity: 0.5;
+  filter: drop-shadow(7px 8px 6px grey);
+}
+
+.input {
+  margin-left: 13px;
+}
+
+/* contient tous les boutons du site*/
+.section {
+  display: block;
+  background-color: grey;
+}
+
+.chargement {
+  /*création du loader*/
+  border: 10px solid #f3f3f3;
+  border-top: 10px solid #9356DC;
+  border-bottom: 10px solid #FF79DA;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  -webkit-animation: spin 3s linear infinite;
+  /* s'adapte à tous les navigateurs*/
+  -o-animation: spin 3s linear infinite;
+  animation: spin 3s linear infinite;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Animation du loader*/
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+/*  disparition du loader*/
+/* accueil ==> pour mettre un fond derriere la page avant apparition*/
 /* LAYOUTS*/
+header {
+  align-items: center;
+}
+
+/*réservation de menus*/
+.grey {
+  background-color: whitesmoke;
+  margin-bottom: 39px;
+  padding-bottom: 46px;
+  margin-top: 49px;
+}
+.grey h2 {
+  text-align: center;
+  width: 75%;
+  margin-left: 40px;
+  padding-top: 27px;
+}
+.grey p {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 100;
+}
+
+/*La palette du goût*/
 .titre {
   /* Partie Fonctionnement*/
   margin-left: 23px;
@@ -24,9 +131,6 @@
   align-items: center;
   padding-top: 9px;
   padding-bottom: 9px;
-}
-.menu__item:hover {
-  background-color: #E6E6FA;
 }
 .menu__item p {
   color: white;
@@ -62,7 +166,7 @@ li i {
   margin-right: 3%;
   margin-left: 3%;
   margin-bottom: 18px;
-  background-color: white;
+  background-color: blue;
   box-shadow: 8px 8px 12px lightgrey;
   padding-top: 0.5px;
   padding-bottom: 0.5px;
@@ -74,6 +178,14 @@ li i {
   animation-name: slidein;
   /*nom de l'amination*/
   animation-iteration-count: 1;
+}
+.menu1__item:hover {
+  background-color: green;
+  width: 54%;
+  border-radius: 0px 0px 14px 14px;
+  margin-right: 3%;
+  margin-left: 3%;
+  margin-bottom: 18px;
 }
 
 @keyframes slidein {
@@ -87,6 +199,7 @@ li i {
     width: 94%;
   }
 }
+/* Animation coche au survol*/
 .titre3 {
   font-size: 15px;
   padding-left: 10px;
@@ -109,43 +222,6 @@ li i {
   font-size: 13.5px;
 }
 
-header {
-  align-items: center;
-}
-
-/*réservation de menus*/
-.grey {
-  background-color: whitesmoke;
-  margin-bottom: 39px;
-  padding-bottom: 46px;
-  margin-top: 49px;
-}
-.grey h2 {
-  text-align: center;
-  width: 75%;
-  margin-left: 40px;
-  padding-top: 27px;
-}
-.grey p {
-  text-align: center;
-  margin-bottom: 30px;
-  font-weight: 100;
-}
-.grey button {
-  border-radius: 27px;
-  width: 65%;
-  margin-left: 58px;
-  background-color: #FF79DA;
-  padding-bottom: 19px;
-  padding-top: 19px;
-  color: white;
-  filter: drop-shadow(5px 6px 4px silver);
-  border: none;
-  font-weight: bold;
-  background-image: linear-gradient(-5deg, #9370D8, #FF79DA);
-}
-
-/*La palette du goût*/
 /* pied de page*/
 footer {
   background-color: #313030;
@@ -167,54 +243,15 @@ body {
   font-family: Roboto, sans-serif;
   margin: 0;
   overflow-x: hidden;
+  /* transition*/
+  animation-duration: 3s;
 }
 
-/*  #container {
-
-margin: auto;
-position: absolute;
-top: 0;
-left: 0;
-right: 0;
-         bottom: 0;
-         animation-delay: 2.9s;
-         animation: loader 0.1s;
-      }
-      @keyframes loader {
-
-      } */
-.chargement {
-  /*création du loader*/
-  border: 10px solid #f3f3f3;
-  border-top: 10px solid #9356DC;
-  border-bottom: 10px solid #FF79DA;
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
-  -webkit-animation: spin 3s linear infinite;
-  -o-animation: spin 3s linear infinite;
-  animation: spin 3s linear infinite;
-  margin: auto;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 1;
+#section {
+  background-color: #16a085;
+  height: 500px;
 }
 
-/*Animation du loader*/
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-    visibility: hidden;
-    opacity: 0;
-  }
-}
-/*  disparition du loader*/
 /* img restaurant*/
 main {
   background-color: whitesmoke;
@@ -284,29 +321,16 @@ main {
   width: 11%;
 }
 
-/* le bouton commander*/
-button {
-  border-radius: 27px;
-  width: 60%;
-  margin-left: 50px;
-  margin-top: 19px;
-  background-color: #FF79DA;
-  padding-bottom: 16px;
-  padding-top: 16px;
-  color: white;
-  filter: drop-shadow(5px 6px 4px silver);
-  border: none;
-  font-weight: lighter;
-  font-size: 15px;
-  background-image: linear-gradient(-5deg, #9370D8, #FF79DA);
-  transition: 0.3s;
-}
-button:hover {
-  /* éclaircir le bouton au survol */
-  opacity: 0.5;
-  filter: drop-shadow(7px 8px 6px grey);
+/* La palette du gout*/
+.body1 {
+  font-size: 11pt;
+  font-family: Roboto, sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+  background-color: whitesmoke;
 }
 
+/*contient le code standard*/
 /* PAGES*/
 /* animation sur un coeur : couleur violet + icone main qui clique*/
 i.iconeHeart {
@@ -422,5 +446,6 @@ i.iconeHeart2 {
 }
 
 /* tout le code qui est spécifique à la page d'accueil*/
+/* Utilisez les breakpoints avec Sass*/
 
 /*# sourceMappingURL=style.css.map */
