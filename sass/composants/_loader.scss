@@ -1,7 +1,12 @@
 
            .section{
-               display: block;
-               background-color: grey;
+            display: block;
+            background-color: lightgray;
+            height: 100vh;
+            position: fixed; /* a mpodifier pour prendre toute la longuer de l'écran*/
+            width: 100vw;
+            top: 0;
+            left: 0;
            }
            .chargement {
                 /*création du loader*/
@@ -9,16 +14,14 @@
                 border-top:10px solid $primary-color; 
                 border-bottom: 10px solid $secondary-color;
                 border-radius: 50%;
-                width: 100%;
-                height: 100%;
-                background-color: #000;  
+                width: 100px;
+                height: 100px;
+                
                 -webkit-animation: spin 3s linear infinite; /* s'adapte à tous les navigateurs*/
                 -o-animation: spin 3s linear infinite;
                 animation: spin 3s linear infinite;
                 position: absolute; 
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                
                   }
 
         /*Animation du loader*/
