@@ -61,6 +61,7 @@
             animation-duration: 2s; /* vitesse de l'amination*/
             animation-name: slidein;/*nom de l'amination*/
             animation-iteration-count: 1; 
+<<<<<<< Updated upstream
             &:hover { 
               background-color:green;
               width: 54%;
@@ -69,6 +70,13 @@
               margin-left: 3%;
               margin-bottom: 18px;
               } 
+=======
+            &:hover {                           /*ne fonctionne pas*/
+              background-color: $tertiary-color;
+              border-radius: 0px 14px 14px 0px ;
+              width: 13%;
+              }
+>>>>>>> Stashed changes
           } 
  
       @keyframes slidein { /* selection de l'animation*/
@@ -106,5 +114,5 @@
 
                 }
          
-            
+               
    
