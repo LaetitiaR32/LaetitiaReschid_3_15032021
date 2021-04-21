@@ -61,14 +61,7 @@
             animation-duration: 2s; /* vitesse de l'amination*/
             animation-name: slidein;/*nom de l'amination*/
             animation-iteration-count: 1; 
-            &:hover { 
-              background-color:blue;
-              width: 54%;
-              border-radius: 0px 0px 14px 14px;
-              margin-right: 3%;
-              margin-left: 3%;
-              margin-bottom: 18px;
-              } 
+            
           } 
  
       @keyframes slidein { /* selection de l'animation*/
@@ -99,12 +92,64 @@
                    }
                    .prix {
                     font-weight: bold;
-                    position: absolute;
-                    top: 22px;
-                    left: 256PX;
                     font-size:13.5px;
+                    padding-left: $pdg;
 
                 }
+                .iCircle {
+                  font-size: 20px;
+                  color: white;
+                  &:hover{
+                    -webkit-transform: rotate(360deg) scale(1.2);
+	                  transform: rotate(360deg) scale(1.2);
+	                  -webkit-transition: .3s ease-in-out;
+	                  transition: .3s ease-in-out;
+                  }
+                }
+
+    /* flexbox pour les menus */
+        #texte {
+          width: 82%;
+          height: 13px;
+     
+        }
+
+        #cout {
+          display: flex;
+          justify-content: flex-end;
+          width: 95%;
+     
+        }
+
+        #checkbox {
+          display: flex;
+          justify-content: flex-end;
+          width: 10%;
+          padding-left: 8%;
+          margin-left: 82%;
+          position: absolute;
+          top: 0px;
+          
+          &:hover {  /* slide de droite à gauche*/
+            background-color: $tertiary-color;
+            animation-duration: 1s;
+            border-radius: 0px 14px 14px 0px;
+            animation-name: anime; 
+          } 
+          @keyframes anime { /* selection de l'animation*/
+            from {
+              margin-left:92%;
+              width: 0%;
+              visibility: hidden;
+            }
+            to {
+              margin-right: -5%;
+            }
+             }
          
-               
-   
+  
+
+        
+        
+          
+     
