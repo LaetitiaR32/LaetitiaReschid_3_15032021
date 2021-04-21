@@ -7,6 +7,11 @@ $bg-color: lightgrey;
 $pdg: 10px;
 $bgd-color: whitesmoke;
 $btn-color: linear-gradient(-5deg, #9370D8, #FF79DA);
-/* $font-size: 7rem 5rem 4rem 2rem; = liste d'une suite de valeur*+
-/* $font-size: (logo:7rem, heading:5rem, project-heading:4rem, label:2rem); = mapscar plus détaillé*/
-/* MAPS: pour utiliser il faut map-get(nom de la clé ex: $font-size , nom de la clé : label)*/
+
+/* variables pour le responsive */
+
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+
+// Large tablets and desktops
+$screen-xl-min: 1200px;

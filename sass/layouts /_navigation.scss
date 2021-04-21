@@ -118,7 +118,6 @@
           display: flex;
           justify-content: flex-end;
           width: 95%;
-     
         }
 
         #checkbox {
@@ -129,13 +128,13 @@
           margin-left: 82%;
           position: absolute;
           top: 0px;
-          
           &:hover {  /* slide de droite à gauche*/
             background-color: $tertiary-color;
             animation-duration: 1s;
             border-radius: 0px 14px 14px 0px;
             animation-name: anime; 
-          } 
+          }   }
+
           @keyframes anime { /* selection de l'animation*/
             from {
               margin-left:92%;
@@ -146,10 +145,3 @@
               margin-right: -5%;
             }
              }
-         
-  
-
-        
-        
-          
-     
