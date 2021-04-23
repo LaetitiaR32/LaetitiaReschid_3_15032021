@@ -2,7 +2,7 @@
 button { 
     border-radius : 27px;
     width : 65%; 
-    margin-left: 58px;
+    margin-left: 17.5%;
     background-color: $secondary-color;
     padding-bottom: 19px;
     padding-top: 19px;
@@ -11,6 +11,13 @@ button {
     border:none;
     font-weight: bold;
     background-image: $btn-color;
+    @include md {
+      width: 35%;
+      margin-left: 32.5%;
+    }
+    @include xl {
+      margin-left: 31.5%;
+    }
 
 }
 
@@ -18,8 +25,7 @@ button {
 .btn {
     border-radius : 27px;
     width : 60%; 
-    margin-left: 50px;
-    margin-top: 19px;
+    margin-left: 20%;
     background-color: $secondary-color;
     padding-bottom: 16px;
     padding-top: 16px;
@@ -33,7 +39,15 @@ button {
        &:hover { /* éclaircir le bouton au survol */
             opacity: 0.5;
             filter: drop-shadow(7px 8px 6px grey);
-        
+        }
+        @include md {
+          width: 50%;
+          margin-left: 25%;
+
+        }
+        @include xl {
+          width: 27%;
+          margin-left: 36.5%;
         }
 
 }
@@ -41,3 +55,13 @@ button {
 .input {
   margin-left: 13px;
 }
+
+i.iStore:hover{
+  color: #9370D8;
+} 
+i.iMobile:hover{
+  color: #9370D8;
+}   
+i.iList:hover{
+  color: #9370D8;
+}     

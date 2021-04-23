@@ -7,7 +7,7 @@
 button {
   border-radius: 27px;
   width: 65%;
-  margin-left: 58px;
+  margin-left: 17.5%;
   background-color: #FF79DA;
   padding-bottom: 19px;
   padding-top: 19px;
@@ -17,13 +17,23 @@ button {
   font-weight: bold;
   background-image: linear-gradient(-5deg, #9370D8, #FF79DA);
 }
+@media (min-width: 768px) {
+  button {
+    width: 35%;
+    margin-left: 32.5%;
+  }
+}
+@media (min-width: 1200px) {
+  button {
+    margin-left: 31.5%;
+  }
+}
 
 /* le bouton commander ==> pour les pages menus*/
 .btn {
   border-radius: 27px;
   width: 60%;
-  margin-left: 50px;
-  margin-top: 19px;
+  margin-left: 20%;
   background-color: #FF79DA;
   padding-bottom: 16px;
   padding-top: 16px;
@@ -40,24 +50,36 @@ button {
   opacity: 0.5;
   filter: drop-shadow(7px 8px 6px grey);
 }
+@media (min-width: 768px) {
+  .btn {
+    width: 50%;
+    margin-left: 25%;
+  }
+}
+@media (min-width: 1200px) {
+  .btn {
+    width: 27%;
+    margin-left: 36.5%;
+  }
+}
 
 .input {
   margin-left: 13px;
 }
 
-/* contient tous les boutons du site*/
-.section {
-  display: block;
-  background-color: lightgray;
-  height: 100vh;
-  position: fixed;
-  /* a mpodifier pour prendre toute la longuer de l'écran*/
-  width: 100vw;
-  top: 0;
-  left: 0;
-  z-index: 1;
+i.iStore:hover {
+  color: #9370D8;
 }
 
+i.iMobile:hover {
+  color: #9370D8;
+}
+
+i.iList:hover {
+  color: #9370D8;
+}
+
+/* contient tous les boutons du site*/
 .chargement {
   /*création du loader*/
   border: 10px solid #f3f3f3;
@@ -73,6 +95,9 @@ button {
   -o-animation: spin 3s linear infinite;
   animation: spin 3s linear infinite;
   position: absolute;
+  animation-fill-mode: forwards;
+  /* fait disparait l'icone de chargement */
+  animation-iteration-count: 1;
 }
 
 /*Animation du loader*/
@@ -93,12 +118,27 @@ header {
   align-items: center;
 }
 
+nav {
+  background-color: white;
+}
+
 /*réservation de menus*/
 .grey {
   background-color: whitesmoke;
   margin-bottom: 39px;
-  padding-bottom: 46px;
+  /*padding-bottom: 46px;*/
   margin-top: 49px;
+}
+@media (min-width: 768px) {
+  .grey {
+    margin-top: 51px;
+    padding-bottom: 56px;
+  }
+}
+@media (min-width: 1200px) {
+  .grey {
+    margin-top: 51px;
+  }
 }
 .grey h2 {
   text-align: center;
@@ -106,22 +146,55 @@ header {
   margin-left: 40px;
   padding-top: 27px;
 }
+@media (min-width: 768px) {
+  .grey h2 {
+    margin-left: 15%;
+    padding-top: 45px;
+  }
+}
+@media (min-width: 1200px) {
+  .grey h2 {
+    margin-left: 12%;
+  }
+}
 .grey p {
   text-align: center;
   margin-bottom: 30px;
   font-weight: 100;
 }
+@media (min-width: 768px) {
+  .grey p {
+    margin-left: 4.5%;
+  }
+}
+@media (min-width: 1200px) {
+  .grey p {
+    margin-left: -0.5%;
+  }
+}
 
 /*La palette du goût*/
 .titre {
   /* Partie Fonctionnement*/
-  margin-left: 23px;
+  margin-left: 7%;
   margin-bottom: 16px;
+  padding-top: 13px;
+}
+@media (min-width: 768px) {
+  .titre {
+    margin-left: 4%;
+  }
 }
 
 .menu {
   width: 100%;
   padding: 0;
+  padding-bottom: 30px;
+}
+@media (min-width: 768px) {
+  .menu {
+    display: flex;
+  }
 }
 
 .menu__item {
@@ -135,6 +208,12 @@ header {
   padding-top: 9px;
   padding-bottom: 9px;
 }
+@media (min-width: 768px) {
+  .menu__item {
+    font-size: 10pt;
+    width: 100%;
+  }
+}
 .menu__item p {
   color: white;
   border-radius: 59%;
@@ -146,9 +225,6 @@ header {
   font-size: 14px;
   margin-left: -5px;
 }
-.menu__item i.iStore {
-  color: #9370D8;
-}
 
 li i {
   /* menu*/
@@ -156,11 +232,24 @@ li i {
   font-size: 17px;
   color: dimgrey;
 }
+@media (min-width: 1200px) {
+  li i {
+    padding-left: 12%;
+    padding-right: 12%;
+  }
+}
 
 /*La palette du goût*/
 .menu1 {
   width: 100%;
   padding: 0;
+}
+@media (min-width: 768px) {
+  .menu1 {
+    width: 69%;
+    margin-right: 15.5%;
+    margin-left: 15.5%;
+  }
 }
 
 .menu1__item {
@@ -199,6 +288,11 @@ li i {
   font-size: 15px;
   padding-left: 10px;
 }
+@media (min-width: 768px) {
+  .titre3 {
+    padding-left: 4%;
+  }
+}
 
 .sous-titre {
   font-weight: 300;
@@ -207,6 +301,11 @@ li i {
   overflow: hidden;
   padding-left: 10px;
   font-size: 13.5px;
+}
+@media (min-width: 768px) {
+  .sous-titre {
+    padding-left: 4%;
+  }
 }
 
 .prix {
@@ -218,6 +317,12 @@ li i {
 .iCircle {
   font-size: 20px;
   color: white;
+}
+@media (min-width: 1200px) {
+  .iCircle {
+    font-size: 22px;
+    margin-right: 20px;
+  }
 }
 .iCircle:hover {
   -webkit-transform: rotate(360deg) scale(1.2);
@@ -241,11 +346,23 @@ li i {
 #checkbox {
   display: flex;
   justify-content: flex-end;
-  width: 10%;
+  width: 13%;
   padding-left: 8%;
-  margin-left: 82%;
+  margin-left: 79%;
   position: absolute;
   top: 0px;
+}
+@media (min-width: 768px) {
+  #checkbox {
+    width: 4%;
+    margin-left: 88%;
+  }
+}
+@media (min-width: 1200px) {
+  #checkbox {
+    width: 1%;
+    margin-left: 91%;
+  }
 }
 #checkbox:hover {
   /* slide de droite à gauche*/
@@ -266,6 +383,32 @@ li i {
     margin-right: -5%;
   }
 }
+/*test
+.test {
+  &:hover {
+    width: 82%;
+    animation-duration: 2s;
+    animation-name: teste; 
+    @include xl {
+      width: 52%;
+      animation-duration: 2s;
+      animation-name: teste; 
+    }
+  }   }
+
+  @keyframes teste { /* selection de l'animation
+    from {
+      margin-left:92%;
+      width: 0%;
+      visibility: hidden;
+    }
+    to {
+      margin-right: -5%;
+    }
+
+
+}
+*/
 /* pied de page*/
 footer {
   background-color: #313030;
@@ -276,9 +419,39 @@ footer h3 {
   font-family: Shrikhand, sans-serif;
   margin-left: 12px;
 }
+@media (min-width: 768px) {
+  footer h3 {
+    text-align: center;
+  }
+}
 footer p {
   line-height: 10px;
   margin-left: 12px;
+}
+@media (min-width: 768px) {
+  footer p {
+    margin-left: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  footer p {
+    margin-left: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .pied {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+}
+@media (min-width: 1200px) {
+  .pied {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
 }
 
 /* BASE*/
@@ -287,20 +460,28 @@ body {
   font-family: Roboto, sans-serif;
   margin: 0;
   overflow-x: hidden;
-  /* transition*/
-  animation-duration: 3s;
+  background-color: whitesmoke;
 }
 
 /* img restaurant*/
 main {
   background-color: whitesmoke;
-  margin-top: 50px;
-  padding-bottom: 1px;
+}
+@media (min-width: 768px) {
+  main {
+    margin-top: 18px;
+  }
 }
 
 .background__grey {
-  padding-top: 10px;
-  margin-bottom: 37px;
+  padding-top: 2px;
+  padding-bottom: 22px;
+}
+@media (min-width: 768px) {
+  .background__grey {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 .background__grey figure {
   margin-left: 6%;
@@ -308,6 +489,11 @@ main {
   display: flex;
   flex-direction: column;
   position: relative;
+}
+@media (min-width: 768px) {
+  .background__grey figure {
+    width: 38%;
+  }
 }
 .background__grey img {
   border-radius: 15px 15px 0px 0px;
@@ -336,6 +522,11 @@ main {
   top: -35px;
   margin-top: 0;
 }
+@media (min-width: 768px) {
+  .fond {
+    top: -85px;
+  }
+}
 
 .liste {
   margin-bottom: 44px;
@@ -350,14 +541,33 @@ main {
   justify-content: center;
   padding-top: 23px;
 }
+@media (min-width: 768px) {
+  .titre1 {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    font-size: 30px;
+  }
+}
 
 .titre2 {
   font-size: 15px;
   font-weight: lighter;
-  margin-left: 18px;
+  margin-left: 5%;
   border-bottom: 3px solid #99E2D0;
   padding-bottom: 5px;
   width: 11%;
+}
+@media (min-width: 768px) {
+  .titre2 {
+    width: 5%;
+    margin-left: 6%;
+    margin-bottom: 24px;
+  }
+}
+@media (min-width: 1200px) {
+  .titre2 {
+    width: 3%;
+  }
 }
 
 /* La palette du gout*/
@@ -410,8 +620,29 @@ i.iconeHeart i.iconeHeart:hover::before {
   box-shadow: 0 2px 5px 1px rgba(64, 60, 67, 0.16);
   background-color: white;
 }
+@media (min-width: 768px) {
+  .center {
+    height: 81px;
+  }
+}
+@media (min-width: 1200px) {
+  .center {
+    height: 91px;
+  }
+}
 .center img {
   margin-top: 20px;
+}
+@media (min-width: 768px) {
+  .center img {
+    width: 36%;
+  }
+}
+@media (min-width: 1200px) {
+  .center img {
+    margin-top: 21px;
+    width: 23%;
+  }
 }
 .center #lieu--grey {
   background-color: #eee;
@@ -419,6 +650,12 @@ i.iconeHeart i.iconeHeart:hover::before {
   padding-bottom: 15px;
   padding-top: 15px;
   text-align: center;
+}
+@media (min-width: 768px) {
+  .center #lieu--grey {
+    padding-bottom: 18px;
+    padding-top: 18px;
+  }
 }
 .center i.iMarker {
   padding-right: 10px;
@@ -448,24 +685,60 @@ figure p {
   height: 51px;
   background-color: white;
 }
+@media (min-width: 768px) {
+  .center1 {
+    height: 83px;
+  }
+}
 .center1 i.iArrow {
   padding-left: 12px;
   width: 48%;
 }
+@media (min-width: 768px) {
+  .center1 i.iArrow {
+    padding-left: 21px;
+  }
+}
 .center1 .logo {
-  padding-right: 93px;
+  padding-right: 29%;
   width: 42%;
+}
+@media (min-width: 768px) {
+  .center1 .logo {
+    padding-right: 33.5%;
+    width: 33%;
+  }
 }
 
 i.iconeHeart2 {
   padding-left: 28px;
+}
+i.iconeHeart2:hover {
+  background-image: linear-gradient(0deg, #FF79DA, #9370D8);
+  /* couleur a la taille du coeur*/
+  background-size: cover;
+  background-position: center;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold;
+  transition: background-image 3s ease-out;
+  transition: color 2s ease-out;
+  /*mise en place de la transition : arriver progressive de la couleur */
+}
+i.iconeHeart2 i.iconeHeart::before {
+  transition: color 1s ease-out;
+}
+i.iconeHeart2 i.iconeHeart:hover::before {
+  background-image: linear-gradient(0deg, #FF79DA, #9370D8);
+  cursor: pointer;
 }
 
 /* texte réduit quand la phrase est trop longue class="overflow-ellipsis" */
 .overflow-ellipsis {
   /* sous titre Filet de boeuf*/
   text-overflow: ellipsis;
-  width: 243px;
+  width: 96%;
   padding: 5px 0px;
   white-space: nowrap;
   overflow: hidden;

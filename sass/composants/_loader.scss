@@ -1,16 +1,13 @@
 
            .section{
-            display: block;
-            background-color: lightgray;
-            height: 100vh;
-            position: fixed; /* a mpodifier pour prendre toute la longuer de l'écran*/
-            width: 100vw;
-            top: 0;
-            left: 0;
-            z-index: 1;
-           }
-           .chargement {
-                /*création du loader*/
+           
+              
+        
+        }
+
+
+           .chargement {  /*création du loader*/
+              
                 border: 10px solid #f3f3f3;
                 border-top:10px solid $primary-color; 
                 border-bottom: 10px solid $secondary-color;
@@ -23,8 +20,9 @@
                 -o-animation: spin 3s linear infinite;
                 animation: spin 3s linear infinite;
                 position: absolute; 
-                
-                  }
+                animation-fill-mode: forwards; /* fait disparait l'icone de chargement */
+                animation-iteration-count: 1; 
+                  } 
 
         /*Animation du loader*/
         @keyframes spin {
@@ -36,7 +34,7 @@
                 visibility: hidden;
                 opacity: 0;
              
-            }  }
+            }  } 
 /*  disparition du loader*/
 
 

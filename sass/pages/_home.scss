@@ -41,8 +41,21 @@ i.iconeHeart {
     border-bottom: 3px solid lightgrey;
     box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
     background-color: white;
+    @include md {
+        height: 81px;
+    }
+    @include xl {
+        height: 91px;
+    }
         img { 
             margin-top: 20px; 
+            @include md {
+                width: 36%;
+            }
+            @include xl {
+                margin-top: 21px;
+                width: 23%;
+            }
         }
         #lieu--grey {
         background-color: #eee; 
@@ -50,6 +63,11 @@ i.iconeHeart {
         padding-bottom: 15px;
         padding-top: 15px;
         text-align: center;
+        @include md { 
+            padding-bottom: 18px;
+            padding-top: 18px;
+        }
+       
           }
             i.iMarker{
                 padding-right: $pdg;
@@ -81,25 +99,56 @@ figure p{
     padding-bottom: 1px;
     height: 51px;
     background-color: white;
+    @include md {
+        height: 83px;
+    }
             i.iArrow {
                 padding-left:12px ;
                 width: 48%;
+                @include md {
+                    padding-left: 21px;
+                }
             }
             .logo {
-                padding-right: 93px;
+                padding-right: 29%;
                 width: 42%;
+               @include md {
+                padding-right: 33.5%;
+                width: 33%;
+               }
             }
     }
 
     i.iconeHeart2 {
         padding-left: 28px;
-    }
+        &:hover{
+            background-image: linear-gradient( 0deg , #FF79DA, #9370D8);
+                   /* couleur a la taille du coeur*/
+                   background-size: cover;
+                   background-position: center;
+                   background-clip: text;
+                   -webkit-background-clip:text;
+                   color: transparent;
+                   font-weight: bold;
+                   transition: background-image 3s ease-out;
+                   transition: color 2s ease-out;
+                    /*mise en place de la transition : arriver progressive de la couleur */
+                    }
+            i.iconeHeart::before{
+                transition: color 1s ease-out;
+                            }
+        
+            i.iconeHeart:hover::before{
+                background-image: linear-gradient( 0deg , #FF79DA, #9370D8);
+                        cursor: pointer;
+             
+                    } }
 
     /* texte réduit quand la phrase est trop longue class="overflow-ellipsis" */
 
     .overflow-ellipsis { /* sous titre Filet de boeuf*/
         text-overflow: ellipsis;
-        width: 243px;
+        width: 96%;
         padding: 5px 0px;
         white-space: nowrap;
         overflow: hidden;
@@ -118,4 +167,5 @@ figure p{
         font-size: 13.5px;
 
     }
+
 

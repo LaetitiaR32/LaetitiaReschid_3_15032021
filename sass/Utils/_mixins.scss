@@ -3,9 +3,9 @@
     @media (min-width: #{$screen-md-min}) {
         @content;
     }
- }
+ } 
 
- // Extra large devices
+// Extra large devices
 @mixin xl {
     @media (min-width: #{$screen-xl-min}) {
         @content;

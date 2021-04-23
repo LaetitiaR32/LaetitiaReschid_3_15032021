@@ -7,10 +7,34 @@
                 h3 {
                     font-family: $font-family__title;
                     margin-left: 12px;
+                    @include md {
+                        text-align: center;
+                    }
                 }
                      p {
                     line-height: 10px;
                     margin-left: 12px;
-                     }
+                    @include md {
+                        margin-left: 30px;
+                    }
+                    @include xl {
+                        margin-left: 30px;
+                    }
+                    }
+                    
+                     
             } 
+
+            .pied {
+                @include md {
+                    display: flex;
+                    align-content: center;
+                    justify-content: center;
+                }
+                @include xl {
+                    display: flex;
+                    align-content: center;
+                    justify-content: center;
+                }
+            }
             
