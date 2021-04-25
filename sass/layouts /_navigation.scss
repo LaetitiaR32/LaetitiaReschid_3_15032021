@@ -1,16 +1,26 @@
      .titre { /* Partie Fonctionnement*/
-      margin-left: 7%;
-        margin-bottom: 16px;
-        padding-top: 13px;
+      margin-left: 8%;
+      margin-bottom: 16px;
         @include md {
           margin-left: 4%;
+
         }
+    }
+
+    .titre_main {
+      margin-top: 8px;
+      margin-left: 8%;
+      @include md {
+        margin-left: 4%;
+        padding-top: 38px;
+
+      }
     }
 
     .menu {
         width: 100%;
         padding: 0;
-        padding-bottom: 30px;
+        padding-bottom: 5px;
 
         @include md {
           display: flex;
@@ -49,6 +59,9 @@
         padding: $pdg +10;
         font-size: 17px;
         color: dimgrey;
+        @include md {
+          padding: $pdg +5;
+        }
         @include xl {
           padding-left: 12%;
           padding-right: 12%;

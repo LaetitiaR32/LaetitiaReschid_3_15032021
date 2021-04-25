@@ -80,6 +80,10 @@ i.iList:hover {
 }
 
 /* contient tous les boutons du site*/
+.section {
+  color: yellow;
+}
+
 .chargement {
   /*création du loader*/
   border: 10px solid #f3f3f3;
@@ -118,26 +122,21 @@ header {
   align-items: center;
 }
 
-nav {
-  background-color: white;
-}
-
 /*réservation de menus*/
 .grey {
   background-color: whitesmoke;
   margin-bottom: 39px;
-  /*padding-bottom: 46px;*/
   margin-top: 49px;
+  padding-bottom: 42px;
 }
 @media (min-width: 768px) {
   .grey {
     margin-top: 51px;
-    padding-bottom: 56px;
   }
 }
 @media (min-width: 1200px) {
   .grey {
-    margin-top: 51px;
+    margin-top: 38px;
   }
 }
 .grey h2 {
@@ -176,9 +175,8 @@ nav {
 /*La palette du goût*/
 .titre {
   /* Partie Fonctionnement*/
-  margin-left: 7%;
+  margin-left: 8%;
   margin-bottom: 16px;
-  padding-top: 13px;
 }
 @media (min-width: 768px) {
   .titre {
@@ -186,10 +184,21 @@ nav {
   }
 }
 
+.titre_main {
+  margin-top: 8px;
+  margin-left: 8%;
+}
+@media (min-width: 768px) {
+  .titre_main {
+    margin-left: 4%;
+    padding-top: 38px;
+  }
+}
+
 .menu {
   width: 100%;
   padding: 0;
-  padding-bottom: 30px;
+  padding-bottom: 5px;
 }
 @media (min-width: 768px) {
   .menu {
@@ -231,6 +240,11 @@ li i {
   padding: 20px;
   font-size: 17px;
   color: dimgrey;
+}
+@media (min-width: 768px) {
+  li i {
+    padding: 15px;
+  }
 }
 @media (min-width: 1200px) {
   li i {
@@ -460,16 +474,18 @@ body {
   font-family: Roboto, sans-serif;
   margin: 0;
   overflow-x: hidden;
-  background-color: whitesmoke;
 }
 
 /* img restaurant*/
 main {
   background-color: whitesmoke;
+  padding-top: 24px;
+  margin-top: 29px;
 }
 @media (min-width: 768px) {
   main {
     margin-top: 18px;
+    padding-top: 0px;
   }
 }
 

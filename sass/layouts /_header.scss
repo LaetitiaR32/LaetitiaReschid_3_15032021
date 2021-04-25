@@ -2,23 +2,19 @@
     align-items: center;
   }
 
-  nav{ 
-    background-color: white;
-  }
-
+ 
     
     /*réservation de menus*/
     .grey {
         background-color:$bgd-color;
         margin-bottom: 39px;
-        /*padding-bottom: 46px;*/
         margin-top: 49px;
+        padding-bottom: 42px;
         @include md {
           margin-top: 51px;
-          padding-bottom: 56px;
         }
         @include xl {
-          margin-top: 51px;
+          margin-top: 38px;
         }
     
            h2 { 
