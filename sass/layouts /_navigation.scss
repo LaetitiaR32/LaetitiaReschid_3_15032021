@@ -56,8 +56,7 @@
             }
         
     li i{ /* menu*/
-        padding: $pdg +10;
-        font-size: 17px;
+      
         color: dimgrey;
         @include md {
           padding: $pdg +5;
@@ -82,8 +81,8 @@
         .menu1__item {   
             list-style-type: none;
             border-radius: 14px;
-            margin-right: 3%;
-            margin-left: 3%;
+            margin-right: 2%;
+            margin-left: 2%;
             margin-bottom: 18px;
             background-color: white;
             box-shadow: 8px 8px 12px lightgrey;
@@ -91,12 +90,22 @@
             padding-bottom: 0.5px;
             line-height: 4px;
             position: relative;
-            width: 94%;
+            width: 96%;
+            height: 70px;
             animation-duration: 2s; /* vitesse de l'amination*/
             animation-name: slidein;/*nom de l'amination*/
             animation-iteration-count: 1; 
             
           } 
+
+          .menu1__item:hover #texte {
+            width: 60%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            
+           
+          }
  
       @keyframes slidein { /* selection de l'animation*/
         from {
@@ -114,17 +123,17 @@
 
                    .titre3 {
                     font-size: 15px;
-                    padding-left: $pdg;
+                    padding-left: 4%;
+
                     @include md { 
                       padding-left: 4%;
                     }
                    } 
+                   
                    .sous-titre {
                     font-weight: 300;
                     padding: 5px 0px;
-                    white-space: nowrap;
-                    overflow: hidden;
-                    padding-left: $pdg;
+                    padding-left: 4%;
                     font-size:13.5px;
                     @include md {
                       padding-left: 4%;
@@ -132,72 +141,65 @@
                    }
                    .prix {
                     font-weight: bold;
-                    font-size:13.5px;
-                    padding-left: $pdg;
+                    font-size: 13.5px;
+                    position: relative;
+                    bottom: 21px;
+                    display: flex;
+                    justify-content: flex-end;
 
                 }
                 .iCircle {
                   font-size: 20px;
                   color: white;
+      
+   
                     @include xl {
                       font-size: 22px;
                       margin-right: 20px;
-                    }
-                  &:hover{
-                    -webkit-transform: rotate(360deg) scale(1.2);
-	                  transform: rotate(360deg) scale(1.2);
-	                  -webkit-transition: .3s ease-in-out;
-	                  transition: .3s ease-in-out;
+                    }    
                   }
-                }
+                
 
     /* flexbox pour les menus */
         #texte {
           width: 82%;
-          height: 13px;
-     
+          flex: none;
         }
 
         #cout {
-          display: flex;
-          justify-content: flex-end;
-          width: 95%;
-        }
+        width: 18%;
+        flex: none;
+          }
 
         #checkbox {
-          display: flex;
-          justify-content: flex-end;
-          width: 13%;
-          padding-left: 8%;
-          margin-left: 79%;
-          position: absolute;
-          top: 0px;
-          @include md {
-          width: 4%;
-          margin-left: 88%;
+        width: 12%;
+          /*position: absolute;
+          top:-1px;
+          background-color: #99E2D0; 
+          border-radius: 0px 14px 14px 0px; 
+          width: 22%; 
+          height: 71px; 
+          display: none;
+          justify-content: center;
+          align-items: center;
+          animation: check 1s linear forwards;
+          &:hover {
+            display: flex;  
+            animation: check 1s linear forwards;*/
+        
           }
-          @include xl {
-            width: 1%;
-            margin-left: 91%;
-          }
-          &:hover {  /* slide de droite à gauche*/
-            background-color: $tertiary-color;
+
+          // &:hover {  /* slide de droite à gauche*/
+           /* background-color: $tertiary-color;
             animation-duration: 1s;
             border-radius: 0px 14px 14px 0px;
-            animation-name: anime; 
-           
-          }   }
+            animation-name: anime; */
+            // height: 60px;
 
-          @keyframes anime { /* selection de l'animation*/
-            from {
-              margin-left:92%;
-              width: 0%;
-              visibility: hidden;
-            }
-            to {
-              margin-right: -5%;
-            }
-             }
+           
+         
+
+  
 
       /*test
 .test {

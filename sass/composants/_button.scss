@@ -11,6 +11,10 @@ button {
     border:none;
     font-weight: bold;
     background-image: $btn-color;
+    &:hover { /* éclaircir le bouton au survol */
+      opacity: 0.5;
+      filter: drop-shadow(7px 8px 6px grey);
+  }
     @include md {
       width: 35%;
       margin-left: 32.5%;
@@ -43,6 +47,8 @@ button {
         @include md {
           width: 50%;
           margin-left: 25%;
+          margin-top: 53px;
+
 
         }
         @include xl {

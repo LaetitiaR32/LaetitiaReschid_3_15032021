@@ -92,31 +92,71 @@ figure p{
 }
 
     /*La palette du goût*/
-    .center1 {
+   /* .center2 {
     display: flex;
     align-items: center;
     justify-content: center;
     padding-bottom: 1px;
     height: 51px;
     background-color: white;
-    @include md {
+        @include md {
+            height: 83px;
+            margin-right: 30%;
+        }
+        i.iArrow {
+            padding-left:12px ;
+            width: 48%;
+            @include md {
+                padding-left: 21px;
+            }
+        }
+        .logo {
+            padding-right: 29%;
+            width: 42%;
+           @include md {
+            padding-right: 33.5%;
+            width: 33%;
+           }
+        }
+    }*/
+    .center1 { /*mobile*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1px;
+    height: 51px;
+ 
+    background-color: white;
+    @include md { /*tablette*/
         height: 83px;
+
     }
-            i.iArrow {
-                padding-left:12px ;
-                width: 48%;
-                @include md {
+            i.iArrow { /*mobile*/
+                padding-left: 5%;
+                width: 43%;
+                @include md { /*tablette*/
                     padding-left: 21px;
                 }
             }
-            .logo {
+            .logo { /*mobile*/
                 padding-right: 29%;
                 width: 42%;
-               @include md {
+               @include md { /*tablette*/
                 padding-right: 33.5%;
                 width: 33%;
                }
             }
+    }
+
+    .image {
+    max-width: 100%;
+    height: 230px;
+    object-fit: cover;
+        @include md {
+    max-width: 100%;
+    height: 393px;
+    object-fit: cover;
+        }
     }
 
     i.iconeHeart2 {
@@ -152,18 +192,18 @@ figure p{
         padding: 5px 0px;
         white-space: nowrap;
         overflow: hidden;
-        padding-left: 10px;
+        padding-left: 4%;
         font-size: 13.5px;
 
     }
 
     .overflow-ellipsis1 { /* sous titre Oeuf au plat*/
         text-overflow: ellipsis;
-        width: 201px;
+        width: 100%;
         padding: 5px 0px;
         white-space: nowrap;
         overflow: hidden;
-        padding-left: 10px;
+        padding-left: 4%;
         font-size: 13.5px;
 
     }
