@@ -359,6 +359,14 @@ li i {
   }
 }
 
+/* rotation icone cercle*/
+.menu1__item:hover .iCircle {
+  -webkit-transform: rotate(360deg) scale(1.2);
+  transform: rotate(360deg) scale(1.2);
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+
 /* flexbox pour les menus */
 #texte {
   width: 82%;
