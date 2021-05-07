@@ -94,7 +94,22 @@
             height: 70px;
             display: flex;
             align-items: flex-end;
+            animation-duration: 2s; /* vitesse de l'amination*/
+            animation-name: slidein;/*nom de l'amination*/
+            animation-iteration-count: 1; 
           } 
+          @keyframes slidein { /* selection de l'animation*/
+            from {
+              margin-bottom:100%;
+              width:94%
+            }
+          
+            to {
+              margin-bottom: 5%;
+              width:94%;
+            }
+          }
+    
 
           .menu1__item:hover #texte {
             width: 60%;    
