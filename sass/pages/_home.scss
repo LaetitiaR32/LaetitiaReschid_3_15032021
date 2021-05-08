@@ -31,16 +31,16 @@ i.iconeHeart {
 }  
 
 i.iMobile {
-    padding-right: $pdg;
+    padding-right: 7%;
     
 }
 i.iList {
-    padding-right: $pdg;
-    
+    padding-right: 6%;
 }
+    
 
 i.iStore{
-    padding-right: $pdg;
+    padding-right: 6%;
     
 }
 
@@ -52,9 +52,7 @@ i.iStore{
     display: flex;
     flex-direction:column;
     align-items: center;
-    height: 39px;
-    border-bottom: 3px solid lightgrey;
-    box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
+    height: 48px;
     background-color: white;
     @include md {
         height: 63px;
@@ -63,7 +61,7 @@ i.iStore{
         height: 91px;
     }
         img { 
-            margin-top: 14px;
+            margin-top: 10px;
             @include md {
                 width: 36%;
             }
@@ -75,9 +73,11 @@ i.iStore{
         #lieu--grey {
         background-color: #eee; 
         width: 100%;
-        padding-bottom: 15px;
-        padding-top: 15px;
+        padding-bottom: 16px;
+        padding-top: 16px;
         text-align: center;
+        border-top: 3px solid #eee;
+        box-shadow: 2px -1px 2px #eee;
         @include md { 
             padding-bottom: 18px;
             padding-top: 18px;
