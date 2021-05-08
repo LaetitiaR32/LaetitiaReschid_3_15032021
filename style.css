@@ -152,8 +152,7 @@ header {
 /*réservation de menus*/
 .grey {
   background-color: whitesmoke;
-  margin-bottom: 39px;
-  margin-top: 49px;
+  margin-bottom: 34px;
   padding-bottom: 42px;
 }
 @media (min-width: 768px) {
@@ -169,8 +168,8 @@ header {
 .grey h2 {
   text-align: center;
   width: 75%;
-  margin-left: 40px;
-  padding-top: 27px;
+  margin-left: 13%;
+  padding-top: 66px;
 }
 @media (min-width: 768px) {
   .grey h2 {
@@ -187,6 +186,7 @@ header {
   text-align: center;
   margin-bottom: 30px;
   font-weight: 100;
+  padding-left: 4%;
 }
 @media (min-width: 768px) {
   .grey p {
@@ -254,12 +254,17 @@ header {
   color: white;
   border-radius: 59%;
   background-color: #9370D8;
-  padding-left: 7px;
+  padding-left: 3%;
   padding-right: 7px;
   padding-top: 3px;
   padding-bottom: 4px;
   font-size: 14px;
-  margin-left: -5px;
+  margin-left: -3%;
+  margin-right: 4%;
+}
+
+i.iMobile {
+  padding-left: 3%;
 }
 
 li i {
@@ -306,8 +311,24 @@ li i {
   height: 70px;
   display: flex;
   align-items: flex-end;
+  animation-duration: 2s;
+  /* vitesse de l'amination*/
+  animation-name: slidein;
+  /*nom de l'amination*/
+  animation-iteration-count: 1;
 }
 
+@keyframes slidein {
+  /* selection de l'animation*/
+  from {
+    margin-bottom: 100%;
+    width: 94%;
+  }
+  to {
+    margin-bottom: 5%;
+    width: 94%;
+  }
+}
 .menu1__item:hover #texte {
   width: 60%;
   transition: 1s;
@@ -472,6 +493,10 @@ footer p {
     margin-left: 30px;
   }
 }
+footer p a {
+  color: white;
+  text-decoration: none;
+}
 
 @media (min-width: 768px) {
   .pied {
@@ -494,6 +519,7 @@ body {
   font-family: Roboto, sans-serif;
   margin: 0;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 /* img restaurant*/
@@ -608,6 +634,7 @@ main {
   font-family: Roboto, sans-serif;
   margin: 0;
   overflow-x: hidden;
+  overflow-y: hidden;
   background-color: whitesmoke;
 }
 
@@ -641,20 +668,32 @@ i.iconeHeart i.iconeHeart:hover::before {
   cursor: pointer;
 }
 
+i.iMobile {
+  padding-right: 10px;
+}
+
+i.iList {
+  padding-right: 10px;
+}
+
+i.iStore {
+  padding-right: 10px;
+}
+
 /* mise en forme localisation*/
 .center {
   /*logo+localisation*/
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 51px;
+  height: 39px;
   border-bottom: 3px solid lightgrey;
   box-shadow: 0 2px 5px 1px rgba(64, 60, 67, 0.16);
   background-color: white;
 }
 @media (min-width: 768px) {
   .center {
-    height: 81px;
+    height: 63px;
   }
 }
 @media (min-width: 1200px) {
@@ -663,7 +702,7 @@ i.iconeHeart i.iconeHeart:hover::before {
   }
 }
 .center img {
-  margin-top: 20px;
+  margin-top: 14px;
 }
 @media (min-width: 768px) {
   .center img {

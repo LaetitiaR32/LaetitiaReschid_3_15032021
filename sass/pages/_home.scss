@@ -31,10 +31,19 @@ i.iconeHeart {
 }  
 
 i.iMobile {
-    padding-left: $pdg;
-    display: flex;
-    justify-content: space-between;
+    padding-right: $pdg;
+    
 }
+i.iList {
+    padding-right: $pdg;
+    
+}
+
+i.iStore{
+    padding-right: $pdg;
+    
+}
+
 
 
 /* mise en forme localisation*/ 
@@ -43,18 +52,18 @@ i.iMobile {
     display: flex;
     flex-direction:column;
     align-items: center;
-    height: 51px;
+    height: 39px;
     border-bottom: 3px solid lightgrey;
     box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
     background-color: white;
     @include md {
-        height: 81px;
+        height: 63px;
     }
     @include xl {
         height: 91px;
     }
         img { 
-            margin-top: 20px; 
+            margin-top: 14px;
             @include md {
                 width: 36%;
             }
