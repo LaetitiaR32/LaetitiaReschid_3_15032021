@@ -9,7 +9,7 @@
     .grey {
         background-color:$bgd-color;
         margin-bottom: 34px;
-        padding-bottom: 42px;
+        padding-bottom: 46px;
         @include md {
           margin-top: 51px;
         }
@@ -21,7 +21,7 @@
             text-align: center;
             width: 75%;
             margin-left: 13%;
-            padding-top: 66px;
+            padding-top: 80px;
             @include md {
               margin-left: 15%;
               padding-top: 45px;
@@ -35,7 +35,7 @@
             margin-bottom: 30px;
             font-weight: 100;
             padding-left: 4%;
-
+            width: 92%;
             @include md {
               margin-left: 4.5%;
             }
