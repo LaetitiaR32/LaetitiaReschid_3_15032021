@@ -245,6 +245,9 @@ header {
   padding-top: 9px;
   padding-bottom: 9px;
 }
+.menu__item:hover {
+  background-color: #DDA0DD;
+}
 @media (min-width: 768px) {
   .menu__item {
     font-size: 10pt;
@@ -269,6 +272,13 @@ header {
     padding-right: 3%;
     margin-left: -3%;
     margin-right: 0%;
+  }
+}
+@media (min-width: 1200px) {
+  .menu__item p {
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-left: -2%;
   }
 }
 

@@ -36,10 +36,14 @@
             align-items: center;
             padding-top: 9px;
             padding-bottom: 9px; 
+            &:hover {
+              background-color: #DDA0DD;
+            }
               @include md{
                 font-size: 10pt;
                 width: 100%;
               }
+           
             p {
               color: white;
               border-radius: 59%;
@@ -56,6 +60,11 @@
                 padding-right: 3%; 
                 margin-left: -3%;
               margin-right: 0%;
+              }
+              @include xl {
+                padding-left: 2%;
+                padding-right: 2%;
+                margin-left: -2%;
               }
 
             }
