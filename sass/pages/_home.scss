@@ -1,8 +1,8 @@
 /* animation sur un coeur : couleur violet + icone main qui clique*/
 
 i.iconeHeart {
-    position: relative;
-    bottom: 32px;
+    position: absolute;
+    bottom: 28px;
     left: 86%;
     font-size: 22px;
    &:hover{
@@ -77,6 +77,7 @@ i.iStore{
         padding-top: 16px;
         text-align: center;
         border-top: 3px solid #eee;
+        box-shadow: 2px -1px 2px #eee;
         @include md { 
             padding-bottom: 18px;
             padding-top: 18px;
@@ -94,7 +95,7 @@ figure p{
     
     position: absolute;
     right: 18px;
-    top: -3px;
+    bottom: 145px; /*modifier*/
     color: seagreen;
     background-color: MediumAquaMarine;
     width: 26%;
