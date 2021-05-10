@@ -570,6 +570,7 @@ main {
 
 .background__grey figcaption {
   padding-left: 14px;
+  padding-bottom: 20px;
   background-color: white;
   border-radius: 0px 0px 18px 18px;
   line-height: 0px;
@@ -577,6 +578,7 @@ main {
   box-shadow: 1px 1px 12px lightgrey;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 .background__grey figcaption h3 {
   font-size: 15px;
@@ -647,8 +649,8 @@ main {
 /* PAGES*/
 /* animation sur un coeur : couleur violet + icone main qui clique*/
 i.iconeHeart {
-  position: relative;
-  bottom: 32px;
+  position: absolute;
+  bottom: 28px;
   left: 86%;
   font-size: 22px;
 }
@@ -741,7 +743,8 @@ i.iStore {
 figure p {
   position: absolute;
   right: 18px;
-  top: -3px;
+  bottom: 145px;
+  /*modifier*/
   color: seagreen;
   background-color: MediumAquaMarine;
   width: 26%;
