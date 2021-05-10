@@ -34,11 +34,6 @@
             text-align: center;
             margin-bottom: 30px;
             font-weight: 100;
-            padding-left: 4%;
-            width: 92%;
-            @include md {
-              margin-left: 4.5%;
-            }
             @include xl {
               margin-left: -0.5%;
             }
