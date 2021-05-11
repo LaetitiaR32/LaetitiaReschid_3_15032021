@@ -566,6 +566,7 @@ main {
 .background__grey img {
   border-radius: 15px 15px 0px 0px;
   object-fit: cover;
+  width: 100%;
 }
 
 .background__grey figcaption {
