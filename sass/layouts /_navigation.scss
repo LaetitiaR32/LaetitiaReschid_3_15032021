@@ -8,7 +8,7 @@
     }
 
     .titre_main {
-      margin-top: 8px;
+      margin-top: 8px;  
       margin-left: 8%;
       @include md {
         margin-left: 4%;
@@ -125,7 +125,7 @@
           }
     
 
-          .menu1__item:hover #texte {
+          .menu1__item:hover .texte {
             width: 60%;    
             transition: 1s;
           }
@@ -185,7 +185,7 @@
                 
 
     /* flexbox pour les menus */
-        #texte {
+        .texte {
           width: 82%;
           flex: none;
           text-overflow: ellipsis;
@@ -193,12 +193,12 @@
           white-space: nowrap;
         }
 
-        #cout {
+        .cout {
         width: 14%;
         flex: none;
           }
 
-        #checkbox {
+        .checkbox {
           height: 71px;
           width: 0%;
           overflow:hidden;
@@ -220,14 +220,13 @@
 
         }
             
-         .menu1__item:hover #checkbox { /*  animation transition de la checkbox*/
+         .menu1__item:hover .checkbox { /*  animation transition de la checkbox*/
           transition: 1s;
           transform: translate(-1%);
           width: 22%; /* taille finale de la box*/
           @include md {
             width: 12%;
           }
-
          }     
    
 

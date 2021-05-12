@@ -336,7 +336,7 @@ li i {
     width: 94%;
   }
 }
-.menu1__item:hover #texte {
+.menu1__item:hover .texte {
   width: 60%;
   transition: 1s;
 }
@@ -395,7 +395,7 @@ li i {
   transition: 1s ease-in-out;
 }*/
 /* flexbox pour les menus */
-#texte {
+.texte {
   width: 82%;
   flex: none;
   text-overflow: ellipsis;
@@ -403,12 +403,12 @@ li i {
   white-space: nowrap;
 }
 
-#cout {
+.cout {
   width: 14%;
   flex: none;
 }
 
-#checkbox {
+.checkbox {
   height: 71px;
   width: 0%;
   overflow: hidden;
@@ -422,17 +422,17 @@ li i {
   /*transition: transform 330ms ease-in-out;*/
 }
 @media (min-width: 768px) {
-  #checkbox {
+  .checkbox {
     right: 129px;
   }
 }
 @media (min-width: 1200px) {
-  #checkbox {
+  .checkbox {
     right: 234px;
   }
 }
 
-.menu1__item:hover #checkbox {
+.menu1__item:hover .checkbox {
   /*  animation transition de la checkbox*/
   transition: 1s;
   transform: translate(-1%);
@@ -440,7 +440,7 @@ li i {
   /* taille finale de la box*/
 }
 @media (min-width: 768px) {
-  .menu1__item:hover #checkbox {
+  .menu1__item:hover .checkbox {
     width: 12%;
   }
 }
@@ -654,7 +654,7 @@ i.iconeHeart {
   bottom: 28px;
   left: 86%;
   font-size: 22px;
-  background-clip: text;
+  background-clip: content-box;
   -webkit-background-clip: text;
 }
 i.iconeHeart:hover {
@@ -838,7 +838,7 @@ figure p {
 
 i.iconeHeart2 {
   padding-left: 28px;
-  background-clip: text;
+  background-clip: content-box;
   -webkit-background-clip: text;
 }
 i.iconeHeart2:hover {
