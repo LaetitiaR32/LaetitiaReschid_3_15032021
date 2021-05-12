@@ -155,7 +155,7 @@ figure p{
             }
             .logo { /*mobile*/
                 padding-right: 29%;
-                width: 42%;
+                width: 40%;
                @include md { /*tablette*/
                 padding-right: 33.5%;
                 width: 33%;
@@ -164,7 +164,7 @@ figure p{
     }
 
     .image {
-    max-width: 100%;
+    width: 100%;
     height: 230px;
     object-fit: cover;
         @include md {
