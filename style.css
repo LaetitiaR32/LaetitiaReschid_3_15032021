@@ -229,7 +229,7 @@ header {
 .menu__item {
   list-style-type: none;
   border-radius: 19px;
-  margin: 19px;
+  margin: 18px;
   background-color: whitesmoke;
   box-shadow: 8px 8px 12px lightgrey;
   display: flex;
